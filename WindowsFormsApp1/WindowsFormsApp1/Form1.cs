@@ -64,5 +64,10 @@ namespace WindowsFormsApp1
         {
             DataProvider.GetAllDangNhap();
         }
+
+        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

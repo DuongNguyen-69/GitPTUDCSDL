@@ -31,5 +31,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void txtNoiDung_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
