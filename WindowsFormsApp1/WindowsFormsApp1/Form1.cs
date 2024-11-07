@@ -34,16 +34,16 @@ namespace WindowsFormsApp1
             string tenDangNhap = txtTenDangNhap.Text;
             String matKhau = txtMatKhau.Text;
             bool isFound = false;
-            foreach(var dn in DataProvider.DangNhaps)
+            foreach (var dn in DataProvider.DangNhaps)
             {
-                if(dn.TaiKhoan == tenDangNhap && dn.MatKhau == matKhau)
+                if (dn.TaiKhoan == tenDangNhap && dn.MatKhau == matKhau)
                 {
                     isFound = true;
                     break;
-                   
-                
+
+
                 }
-              
+
             }
             if (isFound)
             {
@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                MessageBox.Show(" sai tên tài khoản hoặc mật khẩu");
+                MessageBox.Show(" Sai tên tài khoản hoặc mật khẩu");
             }
         }
 

@@ -42,7 +42,7 @@ insert into DangNhap values
 ('chinh', N'Phạm Phúc Chính', '3333', 'Admin'),
 ('dat', N'Nguyễn Tiến Đạt', '4444', 'Admin'),
 ('thang', N'Trịnh Quang Thắng', '5555', 'Admin'),
-('thang', N'Trịnh Quang Thắng', '5555', 'Admin');
+('phu', N'Phạm Văn Phú', '6666', 'Admin');
 
 insert into Khoa values
 ('CNTT', N'Công nghệ thông tin'),

@@ -60,7 +60,7 @@
             comboMaMH.FormattingEnabled = true;
             comboMaMH.Location = new System.Drawing.Point(482, 133);
             comboMaMH.Name = "comboMaMH";
-            comboMaMH.Size = new System.Drawing.Size(204, 36);
+            comboMaMH.Size = new System.Drawing.Size(204, 40);
             comboMaMH.TabIndex = 2;
             // 
             // label1
@@ -68,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(105, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 28);
+            this.label1.Size = new System.Drawing.Size(151, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã môn học";
             // 
@@ -77,7 +77,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(105, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 28);
+            this.label2.Size = new System.Drawing.Size(155, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên môn học";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -87,7 +87,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(105, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 28);
+            this.label3.Size = new System.Drawing.Size(84, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số tiết";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -97,7 +97,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(486, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(250, 28);
+            this.label4.Size = new System.Drawing.Size(312, 32);
             this.label4.TabIndex = 0;
             this.label4.Text = "Chọn mã môn học cần tìm :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -109,7 +109,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(878, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(356, 50);
+            this.label5.Size = new System.Drawing.Size(423, 60);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tìm kiếm thông tin";
             // 
@@ -118,36 +118,39 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(729, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 28);
+            this.label6.Size = new System.Drawing.Size(173, 32);
             this.label6.TabIndex = 0;
             this.label6.Text = "Nhập từ khoá :";
             // 
             // txtMaMH
             // 
+            this.txtMaMH.Enabled = false;
             this.txtMaMH.Location = new System.Drawing.Point(254, 56);
             this.txtMaMH.Name = "txtMaMH";
-            this.txtMaMH.Size = new System.Drawing.Size(175, 34);
+            this.txtMaMH.Size = new System.Drawing.Size(175, 39);
             this.txtMaMH.TabIndex = 1;
             // 
             // TxtTenMH
             // 
+            this.TxtTenMH.Enabled = false;
             this.TxtTenMH.Location = new System.Drawing.Point(254, 133);
             this.TxtTenMH.Name = "TxtTenMH";
-            this.TxtTenMH.Size = new System.Drawing.Size(175, 34);
+            this.TxtTenMH.Size = new System.Drawing.Size(175, 39);
             this.TxtTenMH.TabIndex = 1;
             // 
             // txtSoTiet
             // 
+            this.txtSoTiet.Enabled = false;
             this.txtSoTiet.Location = new System.Drawing.Point(254, 230);
             this.txtSoTiet.Name = "txtSoTiet";
-            this.txtSoTiet.Size = new System.Drawing.Size(175, 34);
+            this.txtSoTiet.Size = new System.Drawing.Size(175, 39);
             this.txtSoTiet.TabIndex = 1;
             // 
             // txtNoiDung
             // 
             this.txtNoiDung.Location = new System.Drawing.Point(885, 133);
             this.txtNoiDung.Name = "txtNoiDung";
-            this.txtNoiDung.Size = new System.Drawing.Size(234, 34);
+            this.txtNoiDung.Size = new System.Drawing.Size(234, 39);
             this.txtNoiDung.TabIndex = 1;
             this.txtNoiDung.TextChanged += new System.EventHandler(this.txtNoiDung_TextChanged);
             // 
@@ -177,6 +180,7 @@
             this.btnHienThiTatCa.TabIndex = 3;
             this.btnHienThiTatCa.Text = "Hiện ra tất cả";
             this.btnHienThiTatCa.UseVisualStyleBackColor = true;
+            this.btnHienThiTatCa.Click += new System.EventHandler(this.btnHienThiTatCa_Click);
             // 
             // dtgvMonHoc
             // 
@@ -195,9 +199,11 @@
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm mới";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLuu
             // 
+            this.btnLuu.Enabled = false;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Location = new System.Drawing.Point(198, 635);
             this.btnLuu.Name = "btnLuu";
@@ -205,6 +211,7 @@
             this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu ";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
@@ -268,7 +275,7 @@
             // 
             // MainFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1249, 696);
             this.Controls.Add(this.btnXemDiemTheoMon);

@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
 {
     public class DataProvider
     {
-        const string connString = "Data Source=MSI\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
+        const string connString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
         private static SqlConnection connection;
         public static List<DangNhap> DangNhaps = new List<DangNhap>();
         public static void openconnection()
@@ -63,6 +63,44 @@ namespace WindowsFormsApp1
             finally
             {
                 Closeconnection();
+            }
+        }
+        public static int ThaoTacCSDL(string query)
+        {
+            int kq = 0;
+            try
+            {
+                openconnection();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                kq = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Closeconnection();
+            }
+            return kq;
+        }
+        public static DataTable LoadCSDL(string query)
+        {
+            using (var conn = new SqlConnection(connString))
+            {
+                try
+                {
+                    conn.Open();
+                    var da = new SqlDataAdapter(query, conn);
+                    var dt = new DataTable();
+                    da.Fill(dt); 
+                    return dt;  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}");
+                    return null;  
+                }
             }
         }
     }

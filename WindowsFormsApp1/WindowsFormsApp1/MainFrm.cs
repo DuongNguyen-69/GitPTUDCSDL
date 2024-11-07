@@ -2,13 +2,15 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Collections.Generic;
+
 
 namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = "Data Source=MSI\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
-
+        private string connectionString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
+        private DataTable dt = new DataTable();
         public MainFrm()
         {
             InitializeComponent();
@@ -72,5 +74,70 @@ namespace WindowsFormsApp1
         private void label2_Click(object sender, EventArgs e) { }
         private void label4_Click(object sender, EventArgs e) { }
         private void txtNoiDung_TextChanged(object sender, EventArgs e) { }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            EnableControls(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet, btnLuu });
+            ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet });
+            txtMaMH.Focus();
+        }
+        private void EnableControls(List<Control> controls)
+        {
+            foreach (var control in controls)
+            {
+                control.Enabled = true;
+            }
+        }
+        private void UnenableControl(List<Control> controls)
+        {
+            foreach (Control control in controls)
+            {
+                control.Enabled = false;
+            }
+        }
+        private void ResetText(List<Control> controls)
+        {
+            foreach (Control control in controls)
+            {
+                control.Text = "";
+            }
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            string maMH = txtMaMH.Text;
+            string tenMh = TxtTenMH.Text;
+            string soTiet = txtSoTiet.Text;
+
+            string query = $"INSERT INTO MonHoc VALUES ('{maMH}', N'{tenMh}', {soTiet})";
+
+            int kq = DataProvider.ThaoTacCSDL(query);
+            if (kq>0)
+            {
+                MessageBox.Show("Thêm môn học thành công");
+                LoadTableMonHoc();
+                UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet,btnLuu });
+                ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet });
+            }
+            else
+            {
+                MessageBox.Show("Không thể thêm môn học, vui lòng xem lại");
+            }
+        }
+
+        private void btnHienThiTatCa_Click(object sender, EventArgs e)
+        {
+            LoadTableMonHoc();
+        }
+        private void LoadTableMonHoc()
+        {
+            string query = "SELECT * FROM MonHoc";
+            dt.Clear();
+            dt = DataProvider.LoadCSDL(query);
+            dtgvMonHoc.DataSource = dt;
+        }
+        
+
     }
 }
