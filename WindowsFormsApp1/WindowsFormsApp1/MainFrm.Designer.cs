@@ -60,7 +60,7 @@
             comboMaMH.FormattingEnabled = true;
             comboMaMH.Location = new System.Drawing.Point(482, 133);
             comboMaMH.Name = "comboMaMH";
-            comboMaMH.Size = new System.Drawing.Size(204, 40);
+            comboMaMH.Size = new System.Drawing.Size(204, 29);
             comboMaMH.TabIndex = 2;
             // 
             // label1
@@ -68,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(105, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 32);
+            this.label1.Size = new System.Drawing.Size(97, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã môn học";
             // 
@@ -77,30 +77,27 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(105, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 32);
+            this.label2.Size = new System.Drawing.Size(98, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên môn học";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(105, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 32);
+            this.label3.Size = new System.Drawing.Size(54, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số tiết";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(486, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(312, 32);
+            this.label4.Size = new System.Drawing.Size(200, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Chọn mã môn học cần tìm :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -109,7 +106,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Location = new System.Drawing.Point(878, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(423, 60);
+            this.label5.Size = new System.Drawing.Size(279, 40);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tìm kiếm thông tin";
             // 
@@ -118,16 +115,18 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(729, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 32);
+            this.label6.Size = new System.Drawing.Size(111, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "Nhập từ khoá :";
             // 
             // txtMaMH
             // 
+            this.txtMaMH.AcceptsReturn = true;
             this.txtMaMH.Enabled = false;
+            this.txtMaMH.HideSelection = false;
             this.txtMaMH.Location = new System.Drawing.Point(254, 56);
             this.txtMaMH.Name = "txtMaMH";
-            this.txtMaMH.Size = new System.Drawing.Size(175, 39);
+            this.txtMaMH.Size = new System.Drawing.Size(175, 29);
             this.txtMaMH.TabIndex = 1;
             // 
             // TxtTenMH
@@ -135,7 +134,7 @@
             this.TxtTenMH.Enabled = false;
             this.TxtTenMH.Location = new System.Drawing.Point(254, 133);
             this.TxtTenMH.Name = "TxtTenMH";
-            this.TxtTenMH.Size = new System.Drawing.Size(175, 39);
+            this.TxtTenMH.Size = new System.Drawing.Size(175, 29);
             this.TxtTenMH.TabIndex = 1;
             // 
             // txtSoTiet
@@ -143,16 +142,15 @@
             this.txtSoTiet.Enabled = false;
             this.txtSoTiet.Location = new System.Drawing.Point(254, 230);
             this.txtSoTiet.Name = "txtSoTiet";
-            this.txtSoTiet.Size = new System.Drawing.Size(175, 39);
+            this.txtSoTiet.Size = new System.Drawing.Size(175, 29);
             this.txtSoTiet.TabIndex = 1;
             // 
             // txtNoiDung
             // 
             this.txtNoiDung.Location = new System.Drawing.Point(885, 133);
             this.txtNoiDung.Name = "txtNoiDung";
-            this.txtNoiDung.Size = new System.Drawing.Size(234, 39);
+            this.txtNoiDung.Size = new System.Drawing.Size(234, 29);
             this.txtNoiDung.TabIndex = 1;
-            this.txtNoiDung.TextChanged += new System.EventHandler(this.txtNoiDung_TextChanged);
             // 
             // btnTimMHTheoND
             // 
@@ -189,6 +187,7 @@
             this.dtgvMonHoc.Name = "dtgvMonHoc";
             this.dtgvMonHoc.Size = new System.Drawing.Size(1225, 269);
             this.dtgvMonHoc.TabIndex = 4;
+            this.dtgvMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMonHoc_CellContentClick);
             // 
             // btnThem
             // 
@@ -275,7 +274,7 @@
             // 
             // MainFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1249, 696);
             this.Controls.Add(this.btnXemDiemTheoMon);
@@ -321,7 +320,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtMaMH;
         private System.Windows.Forms.TextBox TxtTenMH;
         private System.Windows.Forms.TextBox txtSoTiet;
         private System.Windows.Forms.TextBox txtNoiDung;
@@ -337,5 +335,6 @@
         private System.Windows.Forms.Button btnXemDSSVTheoKhoa;
         private System.Windows.Forms.Button btnXemDiem;
         private System.Windows.Forms.Button btnXemDiemTheoMon;
+        public System.Windows.Forms.TextBox txtMaMH;
     }
 }
