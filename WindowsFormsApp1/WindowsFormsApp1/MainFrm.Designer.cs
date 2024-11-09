@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtMaMH = new System.Windows.Forms.TextBox();
             this.TxtTenMH = new System.Windows.Forms.TextBox();
-            this.txtSoTiet = new System.Windows.Forms.TextBox();
+            this.txtSoTin = new System.Windows.Forms.TextBox();
             this.txtNoiDung = new System.Windows.Forms.TextBox();
             this.btnTimMHTheoND = new System.Windows.Forms.Button();
             this.btnTimMonHocTheoMa = new System.Windows.Forms.Button();
@@ -86,9 +86,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(105, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 21);
+            this.label3.Size = new System.Drawing.Size(50, 21);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Số tiết";
+            this.label3.Text = "Số tín";
             // 
             // label4
             // 
@@ -137,13 +137,13 @@
             this.TxtTenMH.Size = new System.Drawing.Size(175, 29);
             this.TxtTenMH.TabIndex = 1;
             // 
-            // txtSoTiet
+            // txtSoTin
             // 
-            this.txtSoTiet.Enabled = false;
-            this.txtSoTiet.Location = new System.Drawing.Point(254, 230);
-            this.txtSoTiet.Name = "txtSoTiet";
-            this.txtSoTiet.Size = new System.Drawing.Size(175, 29);
-            this.txtSoTiet.TabIndex = 1;
+            this.txtSoTin.Enabled = false;
+            this.txtSoTin.Location = new System.Drawing.Point(254, 230);
+            this.txtSoTin.Name = "txtSoTin";
+            this.txtSoTin.Size = new System.Drawing.Size(175, 29);
+            this.txtSoTin.TabIndex = 1;
             // 
             // txtNoiDung
             // 
@@ -221,6 +221,7 @@
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -291,7 +292,7 @@
             this.Controls.Add(this.btnTimMHTheoND);
             this.Controls.Add(comboMaMH);
             this.Controls.Add(this.txtNoiDung);
-            this.Controls.Add(this.txtSoTiet);
+            this.Controls.Add(this.txtSoTin);
             this.Controls.Add(this.TxtTenMH);
             this.Controls.Add(this.txtMaMH);
             this.Controls.Add(this.label6);
@@ -321,7 +322,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtTenMH;
-        private System.Windows.Forms.TextBox txtSoTiet;
+        private System.Windows.Forms.TextBox txtSoTin;
         private System.Windows.Forms.TextBox txtNoiDung;
         private System.Windows.Forms.Button btnTimMHTheoND;
         private System.Windows.Forms.Button btnTimMonHocTheoMa;

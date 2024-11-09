@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = "Data Source=ADMIN-PC\\SQLEXPRESS;Initial Catalog=baitaplon;Integrated Security=True";
+        private string connectionString = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
         private DataTable dt = new DataTable();
 
         public MainFrm()
@@ -70,8 +70,8 @@ namespace WindowsFormsApp1
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            EnableControls(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet, btnLuu });
-            ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet });
+            EnableControls(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu });
+            ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
             txtMaMH.Focus();
         }
 
@@ -103,9 +103,9 @@ namespace WindowsFormsApp1
         {
             string maMH = txtMaMH.Text;
             string tenMh = TxtTenMH.Text;
-            string soTiet = txtSoTiet.Text;
+            string soTin = txtSoTin.Text;
 
-            string query = "INSERT INTO MonHoc (MaMH, TenMH, SoTiet) VALUES (@MaMH, @TenMH, @SoTiet)";
+            string query = "INSERT INTO MonHoc (MaMH, TenMH, SoTin) VALUES (@MaMH, @TenMH, @SoTin)";
 
             using (var conn = new SqlConnection(connectionString))
             {
@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
                         
                         cmd.Parameters.AddWithValue("@MaMH", maMH);
                         cmd.Parameters.AddWithValue("@TenMH", tenMh);
-                        cmd.Parameters.AddWithValue("@SoTiet", soTiet);
+                        cmd.Parameters.AddWithValue("@SoTin", soTin);
 
                         int kq = cmd.ExecuteNonQuery();  
 
@@ -125,8 +125,8 @@ namespace WindowsFormsApp1
                         {
                             MessageBox.Show("Thêm môn học thành công");
                             LoadTableMonHoc();
-                            UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet, btnLuu });
-                            ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTiet });
+                            UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu });
+                            ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
                         }
                         else
                         {
@@ -161,11 +161,33 @@ namespace WindowsFormsApp1
                 
                 txtMaMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["MaMH"].Index].Value.ToString();
                 TxtTenMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["TenMH"].Index].Value.ToString();
-                txtSoTiet.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["SoTin"].Index].Value.ToString(); 
+                txtSoTin.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["SoTin"].Index].Value.ToString(); 
 
-                EnableControls(new List<Control> { txtSoTiet, txtMaMH, TxtTenMH, btnXoa, btnSua });
+                EnableControls(new List<Control> { txtSoTin, txtMaMH, TxtTenMH, btnXoa, btnSua });
             }
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            string maMH = txtMaMH.Text;
+            string tenMH = TxtTenMH.Text;
+            string soTin = txtSoTin.Text;
+            string query = $"Update MonHoc Set TenMH = N'{tenMH}', soTin = {soTin} WHERE MaMH = '{maMH}'";
+            int kq = DataProvider.ThaoTacCSDL(query);
+            if(kq > 0)
+            {
+                MessageBox.Show("Sửa môn học thành công");
+                LoadTableMonHoc();
+                UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu, btnSua, btnXoa });
+                ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
+            }
+            else
+            {
+                MessageBox.Show("Không thể sửa môn học, vui lòng xem lại");
+            }
+        }
+
+    
     }
     }
 
