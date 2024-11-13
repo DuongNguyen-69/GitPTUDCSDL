@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
 {
     public class DataProvider
     {
-        const string connString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;User ID=sa;Password=123456";
+        const string connString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;User ID=sa;Password=";
         private static SqlConnection connection;
         public static List<DangNhap> DangNhaps = new List<DangNhap>();
         public static void openconnection()
