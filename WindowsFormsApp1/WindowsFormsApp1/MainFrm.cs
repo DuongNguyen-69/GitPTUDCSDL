@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
+        private string connectionString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
         private DataTable dt = new DataTable();
 
         public MainFrm()
@@ -187,7 +187,22 @@ namespace WindowsFormsApp1
             }
         }
 
-    
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string maMH = txtMaMH.Text; string query = $"DELETE MonHoc Where MaMH = '{maMH}'";
+            int kq = DataProvider.ThaoTacCSDL(query);
+            if (kq > 0)
+            {
+                MessageBox.Show("Xóa môn học thành công");
+                LoadTableMonHoc();
+                UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu, btnSua, btnXoa });
+                ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
+            }
+            else
+            {
+                MessageBox.Show("Không thể xóa môn học, vui lòng xem lại");
+            }
+        }
     }
     }
 
