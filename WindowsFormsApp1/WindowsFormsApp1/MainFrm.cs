@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
+        private string connectionString = "Data Source=ADMIN-PC;Initial Catalog=baitaplon;User ID=sa;Password=123456";
         private DataTable dt = new DataTable();
 
         public MainFrm()
