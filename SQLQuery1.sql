@@ -1,6 +1,7 @@
 ﻿create database baitaplon
 use baitaplon
 
+
 create table DangNhap(
 	TenDangNhap varchar(50) primary key,
 	Hoten nvarchar(100),
