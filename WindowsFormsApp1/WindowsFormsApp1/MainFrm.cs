@@ -66,6 +66,7 @@ namespace WindowsFormsApp1
             GetData("SELECT * FROM MonHoc");
             GetData("SELECT * FROM KetQua");
             GetData("SELECT * FROM DangNhap");
+            dtgvMonHoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -165,6 +166,30 @@ namespace WindowsFormsApp1
 
                 EnableControls(new List<Control> { txtSoTiet, txtMaMH, TxtTenMH, btnXoa, btnSua });
             }
+        }
+
+        private void comboMaMH_Click(object sender, EventArgs e)
+        {
+            LoadComboMaMH();
+
+        }
+        private void LoadComboMaMH()
+        {
+            string query = "SELECT MaMH, TenMH from MonHoc";
+            comboMaMH.DataSource = DataProvider.LoadCSDL(query);
+            comboMaMH.DisplayMember = "TenMH";
+            comboMaMH.ValueMember = "MaMH";
+
+        }
+
+        private void btnTimMonHocTheoMa_Click(object sender, EventArgs e)
+        {
+            string maMH = (string)comboMaMH.SelectedValue;
+            string query = $"Select * from MonHoc where maMH ='{maMH}'";
+            dt.Clear();
+            dt = DataProvider.LoadCSDL(query);
+            dtgvMonHoc.DataSource = dt;
+
         }
     }
     }

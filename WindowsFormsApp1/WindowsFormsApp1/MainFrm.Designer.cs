@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ComboBox comboMaMH;
+            this.comboMaMH = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,17 +51,17 @@
             this.btnXemDSSVTheoKhoa = new System.Windows.Forms.Button();
             this.btnXemDiem = new System.Windows.Forms.Button();
             this.btnXemDiemTheoMon = new System.Windows.Forms.Button();
-            comboMaMH = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMonHoc)).BeginInit();
             this.SuspendLayout();
             // 
             // comboMaMH
             // 
-            comboMaMH.FormattingEnabled = true;
-            comboMaMH.Location = new System.Drawing.Point(482, 133);
-            comboMaMH.Name = "comboMaMH";
-            comboMaMH.Size = new System.Drawing.Size(204, 29);
-            comboMaMH.TabIndex = 2;
+            this.comboMaMH.FormattingEnabled = true;
+            this.comboMaMH.Location = new System.Drawing.Point(482, 133);
+            this.comboMaMH.Name = "comboMaMH";
+            this.comboMaMH.Size = new System.Drawing.Size(204, 29);
+            this.comboMaMH.TabIndex = 2;
+            this.comboMaMH.Click += new System.EventHandler(this.comboMaMH_Click);
             // 
             // label1
             // 
@@ -169,6 +169,7 @@
             this.btnTimMonHocTheoMa.TabIndex = 3;
             this.btnTimMonHocTheoMa.Text = "tìm kiếm";
             this.btnTimMonHocTheoMa.UseVisualStyleBackColor = true;
+            this.btnTimMonHocTheoMa.Click += new System.EventHandler(this.btnTimMonHocTheoMa_Click);
             // 
             // btnHienThiTatCa
             // 
@@ -289,7 +290,7 @@
             this.Controls.Add(this.btnHienThiTatCa);
             this.Controls.Add(this.btnTimMonHocTheoMa);
             this.Controls.Add(this.btnTimMHTheoND);
-            this.Controls.Add(comboMaMH);
+            this.Controls.Add(this.comboMaMH);
             this.Controls.Add(this.txtNoiDung);
             this.Controls.Add(this.txtSoTiet);
             this.Controls.Add(this.TxtTenMH);
@@ -336,5 +337,6 @@
         private System.Windows.Forms.Button btnXemDiem;
         private System.Windows.Forms.Button btnXemDiemTheoMon;
         public System.Windows.Forms.TextBox txtMaMH;
+        private System.Windows.Forms.ComboBox comboMaMH;
     }
 }
