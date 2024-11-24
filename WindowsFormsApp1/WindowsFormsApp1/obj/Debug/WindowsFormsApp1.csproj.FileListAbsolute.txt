@@ -104,3 +104,15 @@ C:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 C:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.reportFrm.resources
 C:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\RdlCompile.cache
 C:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\RdlCompile.compiled
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DangNhap.resources
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.reportFrm.resources
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\RdlCompile.cache
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\RdlCompile.compiled
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\DONE\BTL DONE\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
