@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=baitaplon;Integrated Security=True";
+        private string connectionString = @"Data Source=ADMIN;Initial Catalog=baitaplon;User ID=sa;Password=123123";
         private DataTable dt = new DataTable();
 
         public MainFrm()
@@ -237,6 +237,30 @@ namespace WindowsFormsApp1
             dt = DataProvider.LoadCSDL(query);
             dtgvMonHoc.DataSource = dt;
         }
+
+        private void btnXemDSSV_Click(object sender, EventArgs e)
+        {
+            reportFrm f = new reportFrm("XemDSSV");
+            f.ShowDialog();
+        }
+
+        private void btnXemDSSVTheoKhoa_Click(object sender, EventArgs e)
+        {
+            reportFrm f = new reportFrm("XemDSSVTheoKhoa");
+            f.ShowDialog();
+        }
+
+        private void btnXemDiem_Click(object sender, EventArgs e)
+        {
+            reportFrm f = new reportFrm("XemDiem");
+            f.ShowDialog();
+        }
+
+        private void btnXemDiemTheoMon_Click(object sender, EventArgs e)
+        {
+            reportFrm f = new reportFrm("XemDiemTheoMon");
+            f.ShowDialog();
+        }
     }
-    }
+}
 
