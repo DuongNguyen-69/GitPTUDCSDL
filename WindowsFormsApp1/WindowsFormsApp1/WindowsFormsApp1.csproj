@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="DangNhap.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="Doimatkau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doimatkau.Designer.cs">
+      <DependentUpon>Doimatkau.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
       <DependentUpon>reportFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Doimatkau.resx">
+      <DependentUpon>Doimatkau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

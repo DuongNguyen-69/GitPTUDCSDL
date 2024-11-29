@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = @"Data Source=ADMIN;Initial Catalog=baitaplon;User ID=sa;Password=123123";
+        private string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
         private DataTable dt = new DataTable();
 
         public MainFrm()
@@ -260,6 +260,12 @@ namespace WindowsFormsApp1
         {
             reportFrm f = new reportFrm("XemDiemTheoMon");
             f.ShowDialog();
+        }
+
+        private void btn_doimk_Click(object sender, EventArgs e)
+        {
+            Doimatkau formDoiMatKhau = new Doimatkau();
+            formDoiMatKhau.ShowDialog();
         }
     }
 }
