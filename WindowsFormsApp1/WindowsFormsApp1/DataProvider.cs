@@ -12,22 +12,18 @@ using System.Data.SqlTypes;
 using System.Data.Sql;
 using System.Data.Common;
 
-
 namespace WindowsFormsApp1
 {
     public class DataProvider
     {
-        const string connString = "Data Source=ADMIN-PC\\SQLEXPRESS;Initial Catalog=baitaplon;Integrated Security=True";
+        const string connString = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
         private static SqlConnection connection;
         public static List<DangNhap> DangNhaps = new List<DangNhap>();
+        public static CapNhatDiemSinhVien CapNhatDiemSV = new CapNhatDiemSinhVien();
         public static void openconnection()
         {
             connection = new SqlConnection(connString);
             connection.Open();
-
-
-
-
         }
         public static void Closeconnection()
         {
@@ -51,8 +47,6 @@ namespace WindowsFormsApp1
                     dangNhap.HoTen = reader["Hoten"].ToString();
                     dangNhap.Quyen = reader["Quyen"].ToString();
                     DangNhaps.Add(dangNhap);
-
-
                 }
 
             }
@@ -63,6 +57,44 @@ namespace WindowsFormsApp1
             finally
             {
                 Closeconnection();
+            }
+        }
+        public static int ThaoTacCSDL(string query)
+        {
+            int kq = 0;
+            try
+            {
+                openconnection();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                kq = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Closeconnection();
+            }
+            return kq;
+        }
+        public static DataTable LoadCSDL(string query)
+        {
+            using (var conn = new SqlConnection(connString))
+            {
+                try
+                {
+                    conn.Open();
+                    var da = new SqlDataAdapter(query, conn);
+                    var dt = new DataTable();
+                    da.Fill(dt); 
+                    return dt;  
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}");
+                    return null;  
+                }
             }
         }
     }
