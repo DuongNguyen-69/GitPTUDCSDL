@@ -1,7 +1,5 @@
 ﻿create database baitaplon
 use baitaplon
-
-
 create table DangNhap(
 	TenDangNhap varchar(50) primary key,
 	Hoten nvarchar(100),
@@ -21,9 +19,10 @@ create table SinhVien(
 	GioiTinh nvarchar(10),
 	DiaChi nvarchar(100),
 	DienThoai varchar(20) unique,
-	MaKhoa varchar(50) references Khoa (MaKhoa)
+	TenKhoa nvarchar(100)
 )
-
+DELETE FROM SinhVien WHERE MaSV = 123;
+drop table SinhVien
 create table MonHoc(
 	MaMH varchar(50) primary key, 
 	TenMH nvarchar(100),
@@ -37,6 +36,7 @@ create table KetQua(
 	primary key (MaSV, MaMH)
 )
 
+ALTER TABLE KetQua ALTER COLUMN Diem FLOAT;
 insert into DangNhap values 
 ('lebao', N'Lê Quốc Bảo', '1111', 'Admin'),
 ('duong', N'Nguyễn Văn Dương', '2222', 'Admin'),
@@ -51,12 +51,13 @@ insert into Khoa values
 
 
 insert into SinhVien values
-(123, N'Nguyễn Văn A', '2004-3-17', N'Nam', 'HP', '0898419728', 'CNTT'),
-(321, N'Lê Quốc B', '2003-9-21', N'Nam', 'HP', '0898419764', 'CNTT'),
-(112, N'Phạm Phúc C', '2003-5-8', N'Nam', 'HP', '0898419149', 'CNTT'),
-(132, N'Trịnh Trần Phương T', '2004-10-9', N'Nữ', 'HP', '0898419687', 'CNTT'),
-(345, N'Nguyễn Tiến E', '2004-4-16', N'Nam', 'HP', '0898419964', 'CNTT'),
-(666, N'Phạm Văn Phú', '2004-11-18', N'Nam', 'HP', '0352793068', 'CNTT');
+(123, N'Nguyễn Văn A', '2004-3-17', N'Nam', 'HP', '0898419728',N'Công nghệ thông tin'),
+(321, N'Lê Quốc B', '2003-9-21', N'Nam', 'HP', '0898419764',N'Công nghệ thông tin'),
+(112, N'Phạm Phúc C', '2003-5-8', N'Nam', 'HP', '0898419149',N'Công nghệ thông tin'),
+(132, N'Trịnh Trần Phương T', '2004-10-9', N'Nữ', 'HP', '0898419687',N'Công nghệ thông tin'),
+(345, N'Nguyễn Tiến E', '2004-4-16', N'Nam', 'HP', '0898419964',N'Công nghệ thông tin'),
+(666, N'Phạm Văn Phú', '2004-11-18', N'Nam', 'HP', '0352793068',N'Công nghệ thông tin');
+
 
 
 insert into MonHoc values

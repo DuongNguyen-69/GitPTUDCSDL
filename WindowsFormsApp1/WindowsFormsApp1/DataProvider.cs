@@ -11,13 +11,15 @@ using System.Windows.Forms;
 using System.Data.SqlTypes;
 using System.Data.Sql;
 using System.Data.Common;
+
 namespace WindowsFormsApp1
 {
     public class DataProvider
     {
-        const string connString = @"Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
+        const string connString = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=baitaplon;User ID=sa;Password=12345";
         private static SqlConnection connection;
         public static List<DangNhap> DangNhaps = new List<DangNhap>();
+        public static CapNhatDiemSinhVien CapNhatDiemSV = new CapNhatDiemSinhVien();
         public static void openconnection()
         {
             connection = new SqlConnection(connString);

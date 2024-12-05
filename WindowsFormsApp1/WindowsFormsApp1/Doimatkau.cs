@@ -8,12 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Configuration;
+                                                            
 namespace WindowsFormsApp1
 {
     public partial class Doimatkau : Form
     {
-        private string  connectionString = @"Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
         public Doimatkau()
         {
             InitializeComponent();
@@ -59,12 +60,13 @@ namespace WindowsFormsApp1
                         cmd.Parameters.AddWithValue("@TenDangNhap", TenDangNhap);
                         cmd.Parameters.AddWithValue("@MatKhauCu", MatKhauCu);
 
-                        int count = (int)cmd.ExecuteScalar();
+                        object result = cmd.ExecuteScalar();
+                        
 
                         // Check sai tk và mk
-                        if(count == 0)
+                        if(result == null)
                         {
-                            MessageBox.Show("Tên đăng nhập hoặc mật khẩu sai!", "Thông báo");
+                            MessageBox.Show("Tên đăng nhập và mật khẩu không đúng!", "Thông báo");
                             return;
                         }
 
@@ -95,6 +97,11 @@ namespace WindowsFormsApp1
             {
                 this.Close();
             }
+        }
+
+        private void Doimatkau_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

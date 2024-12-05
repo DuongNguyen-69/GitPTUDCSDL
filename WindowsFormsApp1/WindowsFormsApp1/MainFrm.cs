@@ -3,12 +3,15 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Linq; 
+
 
 namespace WindowsFormsApp1
 {
     public partial class MainFrm : Form
     {
-        private string connectionString = @"Data Source=ADMIN-PC;Initial Catalog=baitaplon;Integrated Security=True";
+        private string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
         private DataTable dt = new DataTable();
 
         public MainFrm()
@@ -61,11 +64,11 @@ namespace WindowsFormsApp1
 
         private void MainFrm_Load(object sender, EventArgs e)
         {
-            GetData("SELECT * FROM Khoa");
-            GetData("SELECT * FROM SinhVien");
+            //GetData("SELECT * FROM Khoa");
+            //GetData("SELECT * FROM SinhVien");
             GetData("SELECT * FROM MonHoc");
-            GetData("SELECT * FROM KetQua");
-            GetData("SELECT * FROM DangNhap");
+            //GetData("SELECT * FROM KetQua");
+            //GetData("SELECT * FROM DangNhap");
             dtgvMonHoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
         }
 
@@ -102,49 +105,96 @@ namespace WindowsFormsApp1
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string maMH = txtMaMH.Text;
-            string tenMh = TxtTenMH.Text;
-            string soTin = txtSoTin.Text;
+            string maMH = txtMaMH.Text.Trim();
+            string tenMh = TxtTenMH.Text.Trim();
+            string soTin = txtSoTin.Text.Trim();
 
-            string query = "INSERT INTO MonHoc (MaMH, TenMH, SoTin) VALUES (@MaMH, @TenMH, @SoTin)";
+            // Kiểm tra nếu có trường nào còn trống
+            if (string.IsNullOrEmpty(maMH) || string.IsNullOrEmpty(tenMh) || string.IsNullOrEmpty(soTin))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kiểm tra tên môn học chỉ chứa chữ và khoảng trắng
+            if (!tenMh.All(c => char.IsLetter(c) || char.IsWhiteSpace(c)))
+            {
+                MessageBox.Show("Tên môn học phải là định dạng chữ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kiểm tra mã môn học và số tín chỉ phải là số hợp lệ và không âm
+            if (!int.TryParse(maMH, out _) || !int.TryParse(soTin, out int soTinValue) || soTinValue < 0 || int.Parse(maMH) < 0)
+            {
+                MessageBox.Show("Mã môn học và Số tín chỉ phải là số hợp lệ và không được là số âm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string checkQuery = @"SELECT COUNT(*) 
+                          FROM MonHoc 
+                          WHERE MaMH = @MaMH OR (TenMH = @TenMH AND SoTin = @SoTin)";
+            string insertQuery = "INSERT INTO MonHoc (MaMH, TenMH, SoTin) VALUES (@MaMH, @TenMH, @SoTin)";
 
             using (var conn = new SqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    using (var cmd = new SqlCommand(query, conn))
+
+                    // Kiểm tra trùng lặp dữ liệu
+                    using (var checkCmd = new SqlCommand(checkQuery, conn))
                     {
-                        
+                        checkCmd.Parameters.AddWithValue("@MaMH", maMH);
+                        checkCmd.Parameters.AddWithValue("@TenMH", tenMh);
+                        checkCmd.Parameters.AddWithValue("@SoTin", soTinValue);
+
+                        int count = (int)checkCmd.ExecuteScalar();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Dữ liệu đã tồn tại. Vui lòng kiểm tra lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                    // Thêm mới môn học nếu không có trùng lặp
+                    using (var cmd = new SqlCommand(insertQuery, conn))
+                    {
                         cmd.Parameters.AddWithValue("@MaMH", maMH);
                         cmd.Parameters.AddWithValue("@TenMH", tenMh);
-                        cmd.Parameters.AddWithValue("@SoTin", soTin);
+                        cmd.Parameters.AddWithValue("@SoTin", soTinValue);
 
-                        int kq = cmd.ExecuteNonQuery();  
+                        int kq = cmd.ExecuteNonQuery();
 
                         if (kq > 0)
                         {
-                            MessageBox.Show("Thêm môn học thành công");
+                            MessageBox.Show("Thêm môn học thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadTableMonHoc();
                             UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu });
                             ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
                         }
                         else
                         {
-                            MessageBox.Show("Không thể thêm môn học, vui lòng xem lại");
+                            MessageBox.Show("Không thể thêm môn học, vui lòng xem lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}");
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
+
+
+
+
+
+
         private void btnHienThiTatCa_Click(object sender, EventArgs e)
         {
-            LoadTableMonHoc();
+            CapNhatDiemSinhVien f = new CapNhatDiemSinhVien();
+            f.ShowDialog();
         }
 
         private void LoadTableMonHoc()
@@ -159,34 +209,114 @@ namespace WindowsFormsApp1
         {
             if (e.RowIndex >= 0) 
             {
-                
                 txtMaMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["MaMH"].Index].Value.ToString();
                 TxtTenMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["TenMH"].Index].Value.ToString();
                 txtSoTin.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[dtgvMonHoc.Columns["SoTin"].Index].Value.ToString(); 
-
                 EnableControls(new List<Control> { txtSoTin, txtMaMH, TxtTenMH, btnXoa, btnSua });
             }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string maMH = txtMaMH.Text;
-            string tenMH = TxtTenMH.Text;
-            string soTin = txtSoTin.Text;
-            string query = $"Update MonHoc Set TenMH = N'{tenMH}', soTin = {soTin} WHERE MaMH = '{maMH}'";
-            int kq = DataProvider.ThaoTacCSDL(query);
-            if(kq > 0)
+            string maMH = txtMaMH.Text.Trim();
+            string tenMH = TxtTenMH.Text.Trim();
+            string soTin = txtSoTin.Text.Trim();
+
+          
+            if (string.IsNullOrEmpty(maMH) || string.IsNullOrEmpty(tenMH) || string.IsNullOrEmpty(soTin))
             {
-                MessageBox.Show("Sửa môn học thành công");
-                LoadTableMonHoc();
-                UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu, btnSua, btnXoa });
-                ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+           
+            if (!int.TryParse(maMH, out _))
             {
-                MessageBox.Show("Không thể sửa môn học, vui lòng xem lại");
+                MessageBox.Show("Mã môn học phải là số hợp lệ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+           
+            if (!tenMH.All(c => char.IsLetter(c) || char.IsWhiteSpace(c)))
+            {
+                MessageBox.Show("Tên môn học phải là chữ cái.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+           
+            if (!int.TryParse(soTin, out _))
+            {
+                MessageBox.Show("Số tín chỉ phải là số hợp lệ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+           
+            string checkMaMHQuery = @"SELECT COUNT(*) 
+                               FROM MonHoc 
+                               WHERE MaMH = @MaMH AND MaMH != @CurrentMaMH";
+
+           
+            string checkTenMHQuery = @"SELECT COUNT(*) 
+                               FROM MonHoc 
+                               WHERE TenMH = @TenMH AND MaMH != @CurrentMaMH";
+
+            using (var conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    
+                    using (var checkMaMHCmd = new SqlCommand(checkMaMHQuery, conn))
+                    {
+                        checkMaMHCmd.Parameters.AddWithValue("@MaMH", maMH);
+                        checkMaMHCmd.Parameters.AddWithValue("@CurrentMaMH", maMH);
+
+                        int countMaMH = (int)checkMaMHCmd.ExecuteScalar(); 
+                        if (countMaMH > 0)
+                        {
+                            MessageBox.Show("Mã môn học đã tồn tại. Vui lòng kiểm tra lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                    
+                    using (var checkTenMHCmd = new SqlCommand(checkTenMHQuery, conn))
+                    {
+                        checkTenMHCmd.Parameters.AddWithValue("@TenMH", tenMH);
+                        checkTenMHCmd.Parameters.AddWithValue("@CurrentMaMH", maMH);
+
+                        int countTenMH = (int)checkTenMHCmd.ExecuteScalar(); 
+                        if (countTenMH > 0)
+                        {
+                            MessageBox.Show("Tên môn học đã tồn tại. Vui lòng kiểm tra lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+
+                  
+                    string query = $"UPDATE MonHoc SET TenMH = N'{tenMH}', SoTin = {soTin} WHERE MaMH = '{maMH}'";
+                    int kq = DataProvider.ThaoTacCSDL(query);
+
+                    if (kq > 0)
+                    {
+                        MessageBox.Show("Sửa môn học thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadTableMonHoc();
+                        UnenableControl(new List<Control> { txtMaMH, TxtTenMH, txtSoTin, btnLuu, btnSua, btnXoa });
+                        ResetText(new List<Control> { txtMaMH, TxtTenMH, txtSoTin });
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thể sửa môn học, vui lòng xem lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
+
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -204,6 +334,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Không thể xóa môn học, vui lòng xem lại");
             }
         }
+
+
+
+
+
+    
 
         private void comboMaMH_Click(object sender, EventArgs e)
         {
@@ -237,36 +373,38 @@ namespace WindowsFormsApp1
             dt = DataProvider.LoadCSDL(query);
             dtgvMonHoc.DataSource = dt;
         }
-
-        private void btnXemDSSV_Click(object sender, EventArgs e)
-        {
-            reportFrm f = new reportFrm("XemDSSV");
-            f.ShowDialog();
-        }
-
-        private void btnXemDSSVTheoKhoa_Click(object sender, EventArgs e)
-        {
-            reportFrm f = new reportFrm("XemDSSVTheoKhoa");
-            f.ShowDialog();
-        }
-
-        private void btnXemDiem_Click(object sender, EventArgs e)
-        {
-            reportFrm f = new reportFrm("XemDiem");
-            f.ShowDialog();
-        }
-
-        private void btnXemDiemTheoMon_Click(object sender, EventArgs e)
-        {
-            reportFrm f = new reportFrm("XemDiemTheoMon");
-            f.ShowDialog();
-        }
+        
 
         private void btn_doimk_Click(object sender, EventArgs e)
         {
             Doimatkau formDoiMatKhau = new Doimatkau();
             formDoiMatKhau.ShowDialog();
         }
+        
+        private void btnCapNhatKhoa_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnCapNhatSV_Click(object sender, EventArgs e)
+        {
+            CapNhatSinhVien f = new CapNhatSinhVien();
+            f.ShowDialog();
+        }
+
+        private void dtgvMonHoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                txtMaMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[0].Value.ToString();
+                TxtTenMH.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtSoTin.Text = dtgvMonHoc.Rows[e.RowIndex].Cells[2].Value.ToString();
+                EnableControls(new List<Control> { txtSoTin, txtMaMH, TxtTenMH, btnXoa, btnSua });
+            }
+        }
+
+        private void btnHienThiAll_Click(object sender, EventArgs e)
+        {
+            GetData("select * from MonHoc");
+        }
     }
 }
-

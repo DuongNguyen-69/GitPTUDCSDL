@@ -177,3 +177,671 @@ D:\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.Repo
 D:\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.reportFrm.resources
 D:\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 D:\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.XemDSSV.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.XemDSSVTheoKhoa.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.XemDiem.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.XemDiemTheoMon.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatKhoa.resources
+D:\clone\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\btl cua Phu\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+D:\btl moi\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\cua Phu tren Lop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\GitPTUDCSDL\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\GitPTUDCSDL-datlam\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Của Bảo (final)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\GitPTUDCSDL-final\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EnvDTE.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\stdole.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.MSXML.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatDiemSinhVien.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.CapNhatSinhVien.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Doimatkau.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainFrm.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SuaMonHoc.resources
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\GitPTUDCSDL-final (2)\GitPTUDCSDL-final\GitPTUDCSDL-datlam\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
