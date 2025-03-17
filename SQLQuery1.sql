@@ -41,7 +41,8 @@ insert into DangNhap values
 ('duong', N'Nguyễn Văn Dương', '2222', 'Admin'),
 ('chinh', N'Phạm Phúc Chính', '3333', 'Admin'),
 ('dat', N'Nguyễn Tiến Đạt', '4444', 'Admin'),
-('thang', N'Trịnh Quang Thắng', '5555', 'Admin');
+('thang', N'Trịnh Quang Thắng', '5555', 'Admin'),
+('phu', N'Phạm Văn Phú', '6666', 'Admin');
 
 insert into Khoa values
 ('CNTT', N'Công nghệ thông tin'),
@@ -53,7 +54,8 @@ insert into SinhVien values
 (321, N'Lê Quốc B', '2003-9-21', N'Nam', 'HP', '0898419764', 'CNTT'),
 (112, N'Phạm Phúc C', '2003-5-8', N'Nam', 'HP', '0898419149', 'CNTT'),
 (132, N'Trịnh Trần Phương T', '2004-10-9', N'Nữ', 'HP', '0898419687', 'CNTT'),
-(345, N'Nguyễn Tiến E', '2004-4-16', N'Nam', 'HP', '0898419964', 'CNTT');
+(345, N'Nguyễn Tiến E', '2004-4-16', N'Nam', 'HP', '0898419964', 'CNTT'),
+(666, N'Phạm Văn Phú', '2004-11-18', N'Nam', 'HP', '0352793068', 'CNTT');
 
 
 insert into MonHoc values
