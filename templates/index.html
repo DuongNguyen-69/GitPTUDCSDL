@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiếc Nón Kỳ Diệu</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container game-container">
+        <div class="text-center">
+            <h1 class="game-title display-4">Chiếc Nón Kỳ Diệu</h1>
+            <p class="lead">Quay nón, đoán chữ và giành điểm!</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Left Column: Wheel & Controls -->
+            <div class="col-md-6">
+                <div class="card bg-dark-subtle mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Quay Nón</h5>
+                        <div class="wheel-container">
+                            <canvas id="wheelCanvas" width="400" height="400"></canvas>
+                        </div>
+                        <button id="spinButton" class="btn btn-primary btn-lg">Quay Nón</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Puzzle & Guessing -->
+            <div class="col-md-6">
+                <div class="card bg-dark-subtle mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Ô Chữ</h5>
+                            <div>
+                                <span class="badge bg-warning text-dark">Lượt đoán còn lại: <span id="remainingAttempts">5</span></span>
+                            </div>
+                        </div>
+                        <div class="puzzle-category">Thể loại: <span id="puzzleCategory">Loading...</span></div>
+                        <div class="puzzle-area text-center">
+                            <div class="puzzle-text" id="puzzleText">_ _ _ _ _</div>
+                        </div>
+                        
+                        <div class="game-status text-center">
+                            <div id="resultMessage" class="fw-bold"></div>
+                        </div>
+                        
+                        <div class="guess-area text-center">
+                            <div class="input-group justify-content-center mb-3">
+                                <input type="text" id="guessInput" class="form-control guess-input" placeholder="?" maxlength="1">
+                                <button id="guessButton" class="btn btn-success">Đoán</button>
+                            </div>
+                            <button id="newGameButton" class="btn btn-secondary">Trò Chơi Mới</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scoreboard -->
+        <div class="card bg-dark-subtle mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Bảng Xếp Hạng</h5>
+                <div id="playerResults" class="mt-3">
+                    <div class="text-center">
+                        <div class="spinner-border text-light" role="status">
+                            <span class="visually-hidden">Đang tải...</span>
+                        </div>
+                        <p>Đang tải bảng xếp hạng...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2023 Chiếc Nón Kỳ Diệu - Phiên bản Việt Nam</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/wheel.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

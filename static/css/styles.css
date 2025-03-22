@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.game-title {
+    color: var(--bs-warning);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.wheel-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 30px;
+}
+
+.puzzle-area {
+    background-color: var(--bs-dark-bg-subtle);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+.puzzle-text {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.puzzle-category {
+    font-style: italic;
+    color: var(--bs-info);
+    margin-bottom: 10px;
+}
+
+.guess-area {
+    margin-bottom: 30px;
+}
+
+.guess-input {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    max-width: 100px;
+}
+
+.scoreboard {
+    background-color: var(--bs-dark-bg-subtle);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.game-status {
+    font-size: 18px;
+    margin: 15px 0;
+    min-height: 40px;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--bs-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wheel-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .puzzle-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wheel-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .puzzle-text {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
