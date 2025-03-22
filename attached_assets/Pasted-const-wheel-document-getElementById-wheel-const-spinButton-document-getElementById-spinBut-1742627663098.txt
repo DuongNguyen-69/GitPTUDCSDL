@@ -1,0 +1,60 @@
+const wheel = document.getElementById('wheel');
+const spinButton = document.getElementById('spinButton');
+const puzzleText = document.getElementById('puzzleText');
+const guessInput = document.getElementById('guessInput');
+const guessButton = document.getElementById('guessButton');
+const playerResults = document.getElementById('playerResults');
+
+let puzzle = "XIN CHAO"; // Ô chữ mẫu
+let displayedPuzzle = puzzle.split('').map(() => '_').join(' ');
+let score = 0;
+
+puzzleText.textContent = displayedPuzzle;
+
+spinButton.addEventListener('click', () => {
+    const points = Math.floor(Math.random() * 1000); // Quay ngẫu nhiên điểm
+    alert(`Bạn quay được ${points} điểm!`);
+    score += points;
+});
+
+guessButton.addEventListener('click', () => {
+    const guess = guessInput.value.toUpperCase();
+    if (guess && puzzle.includes(guess)) {
+        let newPuzzle = puzzle.split('').map((char, index) =>
+            char === guess ? char : displayedPuzzle[index * 2]
+        ).join(' ');
+        displayedPuzzle = newPuzzle;
+        puzzleText.textContent = displayedPuzzle;
+        if (!displayedPuzzle.includes('_')) {
+            alert(`Chúc mừng! Bạn đã giải được ô chữ và đạt ${score} điểm!`);
+            submitScore(score);
+        }
+    }
+    guessInput.value = '';
+});
+
+function submitScore(score) {
+    // Gửi điểm lên server (sẽ kết nối với backend sau)
+    fetch('/submit-score', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ player: 'Người chơi ' + Date.now(), score })
+    })
+    .then(response => response.json())
+    .then(data => updateScoreboard(data))
+    .catch(error => console.error('Lỗi:', error));
+}
+
+function updateScoreboard(scores) {
+    playerResults.innerHTML = '';
+    scores.forEach(result => {
+        const li = document.createElement('li');
+        li.textContent = `${result.player}: ${result.score} điểm`;
+        playerResults.appendChild(li);
+    });
+}
+
+// Lấy danh sách điểm khi tải trang
+fetch('/scores')
+    .then(response => response.json())
+    .then(data => updateScoreboard(data));
