@@ -177,7 +177,8 @@ class GameClientGUI:
                 if not line: continue
                 if line.startswith("Câu hỏi:"):
                     self.question_label.config(text=line)
-                elif line.startswith("Từ khóa:"):
+                elif line.startswith("Từ khóa:") or line.startswith("Từ hiện tại:"):
+                    # Cập nhật ô từ khóa cho cả gợi ý và sau đoán
                     self.word_label.config(text=line)
                 elif "Lượt của bạn" in line:
                     self.spin_btn.config(state="normal")

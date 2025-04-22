@@ -11,7 +11,8 @@ questions = [
     {"question": "Ngôn ngữ lập trình phổ biến cho AI?", "answer": "python"},
 ]
 
-HOST = '192.168.56.1'  # Địa chỉ IP của máy chủ trong mạng LAN
+# Server sẽ lắng nghe trên mọi interface
+HOST = ''  # hoặc '0.0.0.0'
 PORT = 12345
 
 clients = []
@@ -20,99 +21,138 @@ scores = [0, 0]
 current_question = {}
 masked_answer = []
 turn = 0  # 0 hoặc 1
-
 wheel_options = ["MISS", "BANKRUPT", "DOUBLE", 100, 200, 300, 400, 500]
+clients_lock = threading.Lock()
+
 
 def broadcast(message):
-    """Gửi thông điệp đến tất cả các client."""
-    for client in clients:
-        client.sendall(message.encode())
+    """Gửi thông điệp đến tất cả các client, loại bỏ client mất kết nối."""
+    with clients_lock:
+        for c in clients[:]:
+            try:
+                c.sendall(message.encode())
+            except (ConnectionResetError, BrokenPipeError):
+                clients.remove(c)
+
 
 def mask_answer(answer):
-    """Che giấu các ký tự của câu trả lời bằng dấu gạch dưới."""
-    return ['_' if c.isalpha() else c for c in answer]
+    """Trả về danh sách kí tự: '_' nếu là chữ, ngược lại giữ nguyên."""
+    return ['_' if ch.isalpha() else ch for ch in answer]
+
 
 def send_question():
-    """Gửi câu hỏi ngẫu nhiên và từ khóa (đã che giấu)."""
+    """Chọn câu hỏi ngẫu nhiên và gửi câu hỏi + từ khóa che giấu."""
     global current_question, masked_answer
     current_question = random.choice(questions)
-    masked_answer = mask_answer(current_question["answer"])
+    masked_answer = mask_answer(current_question['answer'])
     broadcast(f"\nCâu hỏi: {current_question['question']}")
     broadcast(f"Từ khóa: {' '.join(masked_answer)}")
 
+
 def handle_turn(player_id):
-    """Quản lý lượt chơi của một người chơi."""
+    """Xử lý lượt chơi của người chơi thứ player_id."""
     global turn, masked_answer, scores
-
     client = clients[player_id]
-    client.sendall(f"\nLượt của bạn ({names[player_id]}). Nhấn ENTER để quay nón...".encode())
-    client.recv(1024)  # Đợi người chơi nhấn Enter
+    name = names[player_id]
+    try:
+        client.sendall(f"\nLượt của bạn ({name}). Nhấn ENTER để quay nón...".encode())
+        client.recv(1024)
+        result = random.choice(wheel_options)
+        broadcast(f"{name} quay nón và được: {result}")
 
-    result = random.choice(wheel_options)
-    broadcast(f"{names[player_id]} quay nón và được: {result}")
+        # Xử lý kết quả quay
+        if result == "MISS":
+            broadcast(f"{name} bị mất lượt!")
+        elif result == "BANKRUPT":
+            scores[player_id] = 0
+            broadcast(f"{name} bị phá sản! Điểm về 0.")
+            # Đồng bộ điểm cả hai
+            for idx, nm in enumerate(names):
+                broadcast(f"Điểm {nm}: {scores[idx]}")
+        elif result == "DOUBLE":
+            scores[player_id] *= 2
+            broadcast(f"{name} nhân đôi điểm! Tổng điểm: {scores[player_id]}")
+            for idx, nm in enumerate(names):
+                broadcast(f"Điểm {nm}: {scores[idx]}")
+        else:
+            # Yêu cầu đoán ký tự hoặc từ
+            client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())
+            guess = client.recv(1024).decode().strip().lower()
+            answer = current_question['answer']
 
-    if result == "MISS":
-        broadcast(f"{names[player_id]} bị mất lượt!")
-    elif result == "BANKRUPT":
-        scores[player_id] = 0
-        broadcast(f"{names[player_id]} bị phá sản! Điểm hiện tại: 0")
-    elif result == "DOUBLE":
-        scores[player_id] *= 2
-        broadcast(f"{names[player_id]} nhân đôi điểm! Tổng điểm: {scores[player_id]}")
-    else:
-        client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())  # ✅ ĐÚNG
-
-        guess = client.recv(1024).decode().strip().lower()
-
-        if len(guess) == 1:  # Người chơi đoán 1 ký tự
-            if guess in current_question["answer"]:
-                for i, c in enumerate(current_question["answer"]):
-                    if c == guess:
-                        masked_answer[i] = guess
-                scores[player_id] += result
-                broadcast(f"Đúng rồi! Từ hiện tại: {' '.join(masked_answer)}")
-                broadcast(f"Điểm {names[player_id]}: {scores[player_id]}")
+            # Đoán một ký tự
+            if len(guess) == 1:
+                count = answer.count(guess)
+                if count > 0:
+                    # Cập nhật masked_answer
+                    for i, ch in enumerate(answer):
+                        if ch == guess:
+                            masked_answer[i] = guess
+                    # Cộng điểm theo số lần xuất hiện
+                    scores[player_id] += result * count
+                    broadcast(f"Có {count} chữ '{guess}' trong từ.")
+                    broadcast(f"Từ hiện tại: {' '.join(masked_answer)}")
+                    # Đồng bộ điểm cả hai
+                    for idx, nm in enumerate(names):
+                        broadcast(f"Điểm {nm}: {scores[idx]}")
+                else:
+                    broadcast(f"Không có chữ '{guess}' nào.")
             else:
-                broadcast(f"Sai rồi! '{guess}' không có trong từ.")
-        else:  # Người chơi đoán cả từ
-            if guess == current_question["answer"]:
-                broadcast(f"{names[player_id]} đoán đúng từ và chiến thắng!")
-                scores[player_id] += 1000
-                broadcast(f"Tổng điểm: {scores[player_id]}")
-                broadcast("KẾT THÚC TRÒ CHƠI!")
-                for c in clients:
-                    c.close()
-                exit()
-            else:
-                broadcast("Đoán sai rồi!")
+                # Đoán cả từ
+                if guess == answer:
+                    scores[player_id] += 1000
+                    broadcast(f"{name} đoán đúng từ và chiến thắng! +1000 điểm (Tổng: {scores[player_id]})")
+                    broadcast("KẾT THÚC TRÒ CHƠI!")
+                    return True
+                else:
+                    broadcast(f"Đoán sai từ '{guess}'.")
+    except (ConnectionResetError, BrokenPipeError):
+        with clients_lock:
+            if client in clients:
+                clients.remove(client)
+    finally:
+        turn = 1 - turn
+    return False
 
-    turn = 1 - turn  # Đổi lượt
 
 def client_handler(client, player_id):
-    """Quản lý quá trình xử lý mỗi client khi tham gia trò chơi."""
-    client.sendall("Nhập tên người chơi: ".encode())  # ✅ ĐÚNG
-    name = client.recv(1024).decode().strip()
-    names.append(name)
-    broadcast(f"{name} đã tham gia trò chơi.")
+    """Xử lý kết nối với client mới."""
+    try:
+        client.sendall("Nhập tên người chơi: ".encode())
+        name = client.recv(1024).decode().strip()
+        with clients_lock:
+            names.append(name)
+        broadcast(f"{name} đã tham gia trò chơi.")
 
-    if len(clients) == 2:
-        broadcast("Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!")
-        send_question()
+        if len(clients) == 2:
+            broadcast("Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!")
+            send_question()
+            # Vòng lặp chơi
+            while True:
+                if handle_turn(turn):
+                    break
+    except (ConnectionResetError, BrokenPipeError):
+        with clients_lock:
+            if client in clients:
+                clients.remove(client)
+    finally:
+        try: client.close()
+        except: pass
 
-        while True:
-            handle_turn(turn)
 
 def start_server():
-    """Khởi động server và lắng nghe kết nối từ client."""
+    """Khởi động server và chấp nhận kết nối."""
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((HOST, PORT))
     server.listen(2)
-    print(f"Server đang chạy tại {HOST}:{PORT}")
+    print(f"Server đang chạy tại {HOST or '0.0.0.0'}:{PORT}")
 
-    while len(clients) < 2:
+    while True:
         client, addr = server.accept()
-        clients.append(client)
-        threading.Thread(target=client_handler, args=(client, len(clients)-1)).start()
+        print(f"Client {addr} đã kết nối!")
+        with clients_lock:
+            clients.append(client)
+        threading.Thread(target=client_handler, args=(client, len(clients)-1), daemon=True).start()
 
 if __name__ == "__main__":
     start_server()
