@@ -111,7 +111,7 @@ def broadcast_game_state(message_log=""):
 
 
 def handle_client_action(client_conn, action_data):
-    global masked_puzzle, current_turn_idx, game_over, winner_id, player_data
+    global masked_puzzle, current_turn_idx, game_over, winner_id, player_data, game_started
 
     action_type = action_data.get("type")
     player_info = player_data.get(client_conn)
@@ -125,10 +125,10 @@ def handle_client_action(client_conn, action_data):
 
     with game_state_lock:
         if game_over or not game_started:
-            if action_type != "set_name": # Cho phép đặt tên ngay cả khi game chưa start
+            if action_type != "set_name":  # Cho phép đặt tên ngay cả khi game chưa bắt đầu
                 return
 
-        if action_type != "set_name" and clients[current_turn_idx][0] != client_conn :
+        if action_type != "set_name" and clients[current_turn_idx][0] != client_conn:
             try:
                 error_msg = {"type": "error", "message": "Không phải lượt của bạn!"}
                 client_conn.sendall((json.dumps(error_msg) + "\n").encode('utf-8'))
@@ -138,7 +138,7 @@ def handle_client_action(client_conn, action_data):
 
         if action_type == "set_name":
             name = action_data.get("name", f"Player_{player_info['id'][1:]}").strip()
-            if not name: name = f"Player_{player_info['id'][1:]}" # Tên mặc định nếu rỗng
+            if not name: name = f"Player_{player_info['id'][1:]}"  # Tên mặc định nếu rỗng
             player_info["name"] = name
             print(f"[SERVER] {client_conn.getpeername()} ({player_info['id']}) đặt tên là: {name}")
             
@@ -146,123 +146,132 @@ def handle_client_action(client_conn, action_data):
             all_names_set = True
             with clients_lock:
                 if len(clients) < MAX_PLAYERS:
-                    all_names_set = False # Chưa đủ người
+                    all_names_set = False  # Chưa đủ người chơi
                 else:
                     for conn_c, _ in clients:
-                        if conn_c not in player_data or not player_data[conn_c].get("name") or "Người chơi" in player_data[conn_c].get("name"): # Tên mặc định ban đầu là "Người chơi X"
-                             # Sửa điều kiện: nếu tên vẫn là mặc định Px thì coi như chưa đặt
+                        if conn_c not in player_data or not player_data[conn_c].get("name") or "Người chơi" in player_data[conn_c].get("name"):
                             if player_data[conn_c].get("name") == player_data[conn_c].get("id"):
                                 all_names_set = False
                                 break
             
             if all_names_set and len(clients) == MAX_PLAYERS and not game_started:
-                 print("[SERVER] Tất cả người chơi đã sẵn sàng. Bắt đầu game...")
-                 time.sleep(0.5)
-                 initialize_game()
+                print("[SERVER] Tất cả người chơi đã sẵn sàng. Bắt đầu game...")
+                game_started = True  # Đánh dấu game đã bắt đầu
+                time.sleep(0.5)
+                initialize_game()
+                # Gửi thông báo game bắt đầu
+                broadcast_game_state({
+                    "type": "game_update",
+                    "game_started": True,
+                    "message": "Game bắt đầu..."
+                })
             else:
-                broadcast_game_state(f"{player_log_name} đã tham gia.")
-            return # Xử lý set_name xong thì return luôn
+                broadcast_game_state({
+                    "type": "game_update",
+                    "game_started": False,
+                    "message": f"{player_log_name} đã tham gia."
+                })
+            return  # Xử lý set_name xong thì return luôn
 
-        if action_type == "spin_wheel":
-            result = random.choice(WHEEL_SEGMENTS)
-            player_info["current_spin_value"] = 0 # Reset trước khi quay mới
-            message_log = f"{player_log_name} quay vào: {result}."
-            print(f"[GAME] {player_log_name} quay vào: {result}")
+        if game_started:
+            # Tiếp tục xử lý các hành động khi game đã bắt đầu
+            if action_type == "spin_wheel":
+                result = random.choice(WHEEL_SEGMENTS)
+                player_info["current_spin_value"] = 0  # Reset trước khi quay mới
+                message_log = f"{player_log_name} quay vào: {result}."
+                print(f"[GAME] {player_log_name} quay vào: {result}")
 
-            if isinstance(result, int):
-                player_info["current_spin_value"] = result
-                message_log += " Hãy đoán một chữ cái."
-            elif result == "MAT LUOT":
-                message_log += " Mất lượt!"
-                current_turn_idx = (current_turn_idx + 1) % len(clients)
-            elif result == "BANKRUPT":
-                player_info["score"] = 0
-                message_log += " Mất toàn bộ điểm! Mất lượt!"
-                current_turn_idx = (current_turn_idx + 1) % len(clients)
-            elif result == "NHAN DOI":
-                player_info["score"] *= 2
-                message_log += " Điểm hiện tại được nhân đôi! Tiếp tục quay hoặc đoán."
-                # Vẫn là lượt của người đó
-            elif result == "MAY MAN":
-                player_info["score"] += LUCKY_SPIN_POINTS
-                message_log += f" Thật may mắn! +{LUCKY_SPIN_POINTS} điểm. Tiếp tục lượt."
+                if isinstance(result, int):
+                    player_info["current_spin_value"] = result
+                    message_log += " Hãy đoán một chữ cái."
+                elif result == "MAT LUOT":
+                    message_log += " Mất lượt!"
+                    current_turn_idx = (current_turn_idx + 1) % len(clients)
+                elif result == "BANKRUPT":
+                    player_info["score"] = 0
+                    message_log += " Mất toàn bộ điểm! Mất lượt!"
+                    current_turn_idx = (current_turn_idx + 1) % len(clients)
+                elif result == "NHAN DOI":
+                    player_info["score"] *= 2
+                    message_log += " Điểm hiện tại được nhân đôi! Tiếp tục quay hoặc đoán."
+                elif result == "MAY MAN":
+                    player_info["score"] += LUCKY_SPIN_POINTS
+                    message_log += f" Thật may mắn! +{LUCKY_SPIN_POINTS} điểm. Tiếp tục lượt."
 
-            next_player_info = player_data[clients[current_turn_idx][0]]
-            message_log += f" Lượt của {next_player_info['name']} ({next_player_info['id']})."
-            broadcast_game_state(message_log)
-
-
-        elif action_type == "guess_letter":
-            letter = action_data.get("letter", "").upper()
-            spin_value = player_info.get("current_spin_value", 0) # Lấy giá trị từ lần quay
-
-            if not letter or len(letter) != 1 or not letter.isalnum():
-                message_log = f"{player_log_name}: Dữ liệu đoán chữ '{letter}' không hợp lệ. Vẫn là lượt của bạn."
-                broadcast_game_state(message_log) # Không chuyển lượt
-                return
-
-            found_count = 0
-            new_masked_puzzle_list = list(masked_puzzle)
-            phrase_to_check = current_puzzle_data["phrase"]
-
-            already_revealed_or_guessed = False
-            for i, char_in_puzzle in enumerate(phrase_to_check):
-                if char_in_puzzle.upper() == letter:
-                    if new_masked_puzzle_list[i] == '_': # Chỉ tính điểm nếu chưa được mở
-                        new_masked_puzzle_list[i] = phrase_to_check[i] # Giữ nguyên hoa thường
-                        found_count += 1
-                    else: # Chữ này đã được mở trước đó rồi
-                        already_revealed_or_guessed = True
-
-
-            if found_count > 0:
-                masked_puzzle = "".join(new_masked_puzzle_list)
-                player_info["score"] += found_count * spin_value
-                message_log = f"{player_log_name} đoán đúng chữ '{letter}'! +{found_count * spin_value} điểm."
-                if "_" not in masked_puzzle:
-                    game_over = True
-                    winner_id = player_info["id"]
-                    player_info["score"] += BONUS_POINTS_FOR_SOLVE # Thưởng thêm khi hoàn thành ô chữ
-                    message_log += f" Ô chữ đã được giải! {player_info['name']} ({winner_id}) chiến thắng với {player_info['score']} điểm!"
-                else: # Vẫn còn chữ cái để đoán, tiếp tục lượt
-                    message_log += f" Tiếp tục lượt của {player_log_name}."
-            else:
-                if already_revealed_or_guessed:
-                    message_log = f"{player_log_name}: Chữ '{letter}' đã được đoán hoặc không có. Mất lượt."
-                else:
-                    message_log = f"{player_log_name} đoán chữ '{letter}' không có. Mất lượt."
-                current_turn_idx = (current_turn_idx + 1) % len(clients)
-            
-            player_info["current_spin_value"] = 0 # Reset giá trị quay sau khi đoán
-            
-            if not game_over:
                 next_player_info = player_data[clients[current_turn_idx][0]]
                 message_log += f" Lượt của {next_player_info['name']} ({next_player_info['id']})."
-            broadcast_game_state(message_log)
+                broadcast_game_state(message_log)
 
-        elif action_type == "solve_puzzle":
-            attempt = action_data.get("phrase", "").upper()
-            if attempt == current_puzzle_data["phrase"].upper():
-                masked_puzzle = current_puzzle_data["phrase"]
-                player_info["score"] += BONUS_POINTS_FOR_SOLVE
-                game_over = True
-                winner_id = player_info["id"]
-                message_log = f"{player_log_name} đã giải thành công ô chữ! {player_info['name']} ({winner_id}) chiến thắng với {player_info['score']} điểm!"
-            else:
-                message_log = f"{player_log_name} giải ô chữ không đúng. Mất lượt."
-                current_turn_idx = (current_turn_idx + 1) % len(clients)
-                if not game_over: # Chỉ thêm log lượt của người tiếp theo nếu game chưa kết thúc
+
+            elif action_type == "guess_letter":
+                letter = action_data.get("letter", "").upper()
+                spin_value = player_info.get("current_spin_value", 0)
+
+                if not letter or len(letter) != 1 or not letter.isalnum():
+                    message_log = f"{player_log_name}: Dữ liệu đoán chữ '{letter}' không hợp lệ. Vẫn là lượt của bạn."
+                    broadcast_game_state(message_log)  # Không chuyển lượt
+                    return
+
+                found_count = 0
+                new_masked_puzzle_list = list(masked_puzzle)
+                phrase_to_check = current_puzzle_data["phrase"]
+
+                already_revealed_or_guessed = False
+                for i, char_in_puzzle in enumerate(phrase_to_check):
+                    if char_in_puzzle.upper() == letter:
+                        if new_masked_puzzle_list[i] == '_':  # Chỉ tính điểm nếu chưa được mở
+                            new_masked_puzzle_list[i] = phrase_to_check[i]  # Giữ nguyên hoa thường
+                            found_count += 1
+                        else:  # Chữ này đã được mở trước đó rồi
+                            already_revealed_or_guessed = True
+
+                if found_count > 0:
+                    masked_puzzle = "".join(new_masked_puzzle_list)
+                    player_info["score"] += found_count * spin_value
+                    message_log = f"{player_log_name} đoán đúng chữ '{letter}'! +{found_count * spin_value} điểm."
+                    if "_" not in masked_puzzle:
+                        game_over = True
+                        winner_id = player_info["id"]
+                        player_info["score"] += BONUS_POINTS_FOR_SOLVE  # Thưởng thêm khi hoàn thành ô chữ
+                        message_log += f" Ô chữ đã được giải! {player_info['name']} ({winner_id}) chiến thắng với {player_info['score']} điểm!"
+                    else:  # Vẫn còn chữ cái để đoán, tiếp tục lượt
+                        message_log += f" Tiếp tục lượt của {player_log_name}."
+                else:
+                    if already_revealed_or_guessed:
+                        message_log = f"{player_log_name}: Chữ '{letter}' đã được đoán hoặc không có. Mất lượt."
+                    else:
+                        message_log = f"{player_log_name} đoán chữ '{letter}' không có. Mất lượt."
+                    current_turn_idx = (current_turn_idx + 1) % len(clients)
+
+                player_info["current_spin_value"] = 0  # Reset giá trị quay sau khi đoán
+
+                if not game_over:
                     next_player_info = player_data[clients[current_turn_idx][0]]
                     message_log += f" Lượt của {next_player_info['name']} ({next_player_info['id']})."
+                broadcast_game_state(message_log)
 
-            player_info["current_spin_value"] = 0 # Reset
-            broadcast_game_state(message_log)
-        
+            elif action_type == "solve_puzzle":
+                attempt = action_data.get("phrase", "").upper()
+                if attempt == current_puzzle_data["phrase"].upper():
+                    masked_puzzle = current_puzzle_data["phrase"]
+                    player_info["score"] += BONUS_POINTS_FOR_SOLVE
+                    game_over = True
+                    winner_id = player_info["id"]
+                    message_log = f"{player_log_name} đã giải thành công ô chữ! {player_info['name']} ({winner_id}) chiến thắng với {player_info['score']} điểm!"
+                else:
+                    message_log = f"{player_log_name} giải ô chữ không đúng. Mất lượt."
+                    current_turn_idx = (current_turn_idx + 1) % len(clients)
+                    if not game_over:  # Chỉ thêm log lượt của người tiếp theo nếu game chưa kết thúc
+                        next_player_info = player_data[clients[current_turn_idx][0]]
+                        message_log += f" Lượt của {next_player_info['name']} ({next_player_info['id']})."
+
+                player_info["current_spin_value"] = 0  # Reset
+                broadcast_game_state(message_log)
+
         elif action_type == "disconnect":
             print(f"[SERVER] {player_log_name} yêu cầu ngắt kết nối.")
             # Việc remove client sẽ do client_thread xử lý khi recv trả về rỗng hoặc lỗi
-            pass # client_thread sẽ tự xử lý khi socket đóng
-
+            pass  # client_thread sẽ tự xử lý khi socket đóng
 
 def client_thread(conn, addr):
     global game_started, player_data, clients
