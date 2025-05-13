@@ -45,15 +45,6 @@ def send_question():
     broadcast(f"Từ khóa: {' '.join(masked_answer)}")
 
 
-def reset_question():
-    global current_question, masked_answer
-    current_question = random.choice(questions)
-    masked_answer = mask_answer(current_question['answer'])
-    broadcast("\nCâu hỏi đã được reset!")
-    broadcast(f"Câu hỏi mới: {current_question['question']}")
-    broadcast(f"Từ khóa: {' '.join(masked_answer)}")
-
-
 def update_turn():
     global turn
     current_player = names[turn]
@@ -118,7 +109,6 @@ def handle_turn(player_id):
 
         for idx, nm in enumerate(names):
             broadcast(f"Điểm {nm}: {scores[idx]}")
-
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:
@@ -144,13 +134,6 @@ def client_handler(client, player_id):
             while True:
                 if handle_turn(turn):
                     break
-
-                # Lắng nghe yêu cầu reset từ client
-                client.sendall("Nhấn ENTER để reset câu hỏi.".encode())
-                reset_request = client.recv(1024).decode().strip()
-                if reset_request == "reset":
-                    reset_question()
-
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:

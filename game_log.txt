@@ -1,72 +1,16 @@
-Nhập tên người chơi:
-Nhập tên người chơi:
-Bạn đã tham gia với tên: phu
-phu đã tham gia trò chơi.
-Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-Đến lượt phu!
-phu đã tham gia trò chơi.
-Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-Đến lượt phu!
-Lượt của bạn (phu). Nhấn ENTER để quay nón...
-Bạn đã tham gia với tên: bao
-bao đã tham gia trò chơi.
-Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-Đến lượt phu!
-Lượt của bạn (phu). Nhấn ENTER để quay nón...
-bao đã tham gia trò chơi.
-Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-Đến lượt phu!
-phu quay nón và được: 500
-Nhập chữ cái hoặc đoán từ:
-phu quay nón và được: 500
-phu quay nón và được: 200
-phu quay nón và được: 200
-Nhập chữ cái hoặc đoán từ:
-[2025-05-13 10:32:44] Nhập tên người chơi:
-[2025-05-13 10:32:49] Nhập tên người chơi:
-[2025-05-13 10:32:59] Bạn đã tham gia với tên: phu
-[2025-05-13 10:32:59] phu đã tham gia trò chơi.
-[2025-05-13 10:32:59] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:32:59] Đến lượt phu!
-[2025-05-13 10:32:59] Lượt của bạn (phu). Nhấn ENTER để quay nón...
-[2025-05-13 10:32:59] phu đã tham gia trò chơi.
-[2025-05-13 10:32:59] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:32:59] Đến lượt phu!
-[2025-05-13 10:33:02] Bạn đã tham gia với tên: ko
-[2025-05-13 10:33:02] ko đã tham gia trò chơi.
-[2025-05-13 10:33:02] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:33:02] Đến lượt phu!
-[2025-05-13 10:33:02] Lượt của bạn (phu). Nhấn ENTER để quay nón...
-[2025-05-13 10:33:02] ko đã tham gia trò chơi.
-[2025-05-13 10:33:02] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:33:02] Đến lượt phu!
-[2025-05-13 10:33:03] phu quay nón và được: 500
-[2025-05-13 10:33:03] Nhập chữ cái hoặc đoán từ:
-[2025-05-13 10:33:03] phu quay nón và được: 500
-[2025-05-13 10:35:43] Đến lượt ko!
-[2025-05-13 10:40:19] Nhập tên người chơi:
-[2025-05-13 10:40:21] Nhập tên người chơi:
-[2025-05-13 10:40:31] Bạn đã tham gia với tên: hu
-[2025-05-13 10:40:31] hu đã tham gia trò chơi.
-[2025-05-13 10:40:31] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:40:31] Đến lượt hu!
-[2025-05-13 10:40:31] hu đã tham gia trò chơi.
-[2025-05-13 10:40:31] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:40:31] Đến lượt hu!
-[2025-05-13 10:40:31] Lượt của bạn (hu). Nhấn ENTER để quay nón...
-[2025-05-13 10:40:32] Bạn đã tham gia với tên: phu
-[2025-05-13 10:40:32] phu đã tham gia trò chơi.
-[2025-05-13 10:40:32] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:40:32] Đến lượt hu!
-[2025-05-13 10:40:32] phu đã tham gia trò chơi.
-[2025-05-13 10:40:32] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
-[2025-05-13 10:40:32] Đến lượt hu!
-[2025-05-13 10:40:32] Lượt của bạn (hu). Nhấn ENTER để quay nón...
-[2025-05-13 10:40:42] Đến lượt phu!
-[2025-05-13 10:40:42] Đến lượt hu!
-[2025-05-13 10:40:42] Nhấn ENTER để reset câu hỏi.
-[2025-05-13 10:44:50] Nhập tên người chơi:
-[2025-05-13 10:44:50] RESET đã tham gia trò chơi.
-[2025-05-13 10:44:53] Nhập tên người chơi:
-[2025-05-13 10:45:00] Bạn đã tham gia với tên: phu
-[2025-05-13 10:45:06] Bạn đã tham gia với tên: du
+[2025-05-13 11:10:55] Nhập tên người chơi:
+[2025-05-13 11:11:47] Nhập tên người chơi:
+[2025-05-13 11:12:24] Bạn đã tham gia với tên: phu
+[2025-05-13 11:12:24] phu đã tham gia trò chơi.
+[2025-05-13 11:12:24] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
+[2025-05-13 11:12:24] Đến lượt phu!
+[2025-05-13 11:12:24] Lượt của bạn (phu). Nhấn ENTER để quay nón...
+[2025-05-13 11:12:28] uhu đã tham gia trò chơi.
+[2025-05-13 11:12:28] Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!
+[2025-05-13 11:12:28] Đến lượt phu!
+[2025-05-13 11:12:28] Lượt của bạn (phu). Nhấn ENTER để quay nón...
+[2025-05-13 11:12:31] phu quay nón và được: DOUBLE
+[2025-05-13 11:12:31] phu nhân đôi điểm! Tổng điểm: 0Điểm phu: 0Điểm uhu: 0
+[2025-05-13 11:12:31] Đến lượt uhu!
+[2025-05-13 11:12:35] phu quay nón và được: 400
+[2025-05-13 11:12:35] Nhập chữ cái hoặc đoán từ:
