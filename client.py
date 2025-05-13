@@ -3,10 +3,11 @@ import threading
 import tkinter as tk
 import queue
 import math
+import datetime
 from tkinter import ttk
 from tkinter import messagebox
 
-HOST = '192.168.1.83'
+HOST = '192.168.56.1'
 PORT = 12345
 
 SEGMENT_COLORS = [
@@ -20,6 +21,7 @@ class GameClientGUI:
         self.root = root
         root.title("🌡 Chiếc nón kỳ diệu 🌡")
         self.queue = queue.Queue()
+        self.log_file = open("game_log.txt", "a", encoding="utf-8")  # Tạo hoặc mở file log
         self.wheel_offset = 0
 
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -223,8 +225,28 @@ class GameClientGUI:
 
     def _show_victory_message(self, message):
         messagebox.showinfo("🎉 Chúc mừng!", message)
+    def _log(self, msg):
+        timestamp = datetime.datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")  # định dạng thời gian
+        full_msg = f"{timestamp} {msg}"
+    
+        # Hiển thị trên giao diện
+        self.log.config(state='normal')
+        self.log.insert('end', full_msg + '\n')
+        self.log.see('end')
+        self.log.config(state='disabled')
+
+    # Ghi ra file log
+        with open("game_log.txt", "a", encoding="utf-8") as f:
+            f.write(full_msg + '\n')
+
 
 if __name__ == '__main__':
     root = tk.Tk()
-    GameClientGUI(root)
+    app = GameClientGUI(root)
+
+    def on_close():
+        app.log_file.close()
+        root.destroy()
+
+    root.protocol("WM_DELETE_WINDOW", on_close)
     root.mainloop()

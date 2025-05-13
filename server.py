@@ -1,8 +1,8 @@
 import socket
 import threading
 import random
+from datetime import datetime
 
-# Danh sách câu hỏi và câu trả lời
 questions = [
     {"question": "Thủ đô của Việt Nam là gì?", "answer": "hanoi"},
     {"question": "Trái cây màu đỏ, nhỏ, có vị chua ngọt là?", "answer": "strawberry"},
@@ -11,7 +11,7 @@ questions = [
     {"question": "Ngôn ngữ lập trình phổ biến cho AI?", "answer": "python"},
 ]
 
-HOST = ''  # Lắng nghe trên tất cả các interface
+HOST = ''
 PORT = 12345
 
 clients = []
@@ -19,13 +19,12 @@ names = []
 scores = [0, 0]
 current_question = {}
 masked_answer = []
-turn = 0  # 0 hoặc 1
+turn = 0
 wheel_options = ["MISS", "BANKRUPT", "DOUBLE", 100, 200, 300, 400, 500]
 clients_lock = threading.Lock()
 
 
 def broadcast(message):
-    """Gửi thông điệp đến tất cả client"""
     with clients_lock:
         for c in clients[:]:
             try:
@@ -35,12 +34,10 @@ def broadcast(message):
 
 
 def mask_answer(answer):
-    """Ẩn các ký tự trong câu trả lời"""
     return ['_' if ch.isalpha() else ch for ch in answer]
 
 
 def send_question():
-    """Chọn và gửi câu hỏi mới"""
     global current_question, masked_answer
     current_question = random.choice(questions)
     masked_answer = mask_answer(current_question['answer'])
@@ -48,15 +45,28 @@ def send_question():
     broadcast(f"Từ khóa: {' '.join(masked_answer)}")
 
 
+def reset_question():
+    global current_question, masked_answer
+    current_question = random.choice(questions)
+    masked_answer = mask_answer(current_question['answer'])
+    broadcast("\nCâu hỏi đã được reset!")
+    broadcast(f"Câu hỏi mới: {current_question['question']}")
+    broadcast(f"Từ khóa: {' '.join(masked_answer)}")
+
+
 def update_turn():
-    """Cập nhật lượt chơi và thông báo cho tất cả client"""
     global turn
     current_player = names[turn]
     broadcast(f"\nĐến lượt {current_player}!")
 
 
+def log_history(player_name, action, guess, result, score):
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open("lichsu_game.txt", "a", encoding="utf-8") as f:
+        f.write(f"[{now}] {player_name} {action}: '{guess}' - {result} (Điểm: {score})\n")
+
+
 def handle_turn(player_id):
-    """Xử lý lượt chơi của người chơi"""
     global turn, masked_answer, scores
     client = clients[player_id]
     name = names[player_id]
@@ -68,12 +78,15 @@ def handle_turn(player_id):
 
         if result == "MISS":
             broadcast(f"{name} bị mất lượt!")
+            log_history(name, "mất lượt", "-", "MISS", scores[player_id])
         elif result == "BANKRUPT":
             scores[player_id] = 0
             broadcast(f"{name} bị phá sản! Điểm về 0.")
+            log_history(name, "phá sản", "-", "BANKRUPT", 0)
         elif result == "DOUBLE":
             scores[player_id] *= 2
             broadcast(f"{name} nhân đôi điểm! Tổng điểm: {scores[player_id]}")
+            log_history(name, "nhân đôi", "-", "DOUBLE", scores[player_id])
         else:
             client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())
             guess = client.recv(1024).decode().strip().lower()
@@ -88,20 +101,24 @@ def handle_turn(player_id):
                     scores[player_id] += result * count
                     broadcast(f"Có {count} chữ '{guess}' trong từ.")
                     broadcast(f"Từ hiện tại: {' '.join(masked_answer)}")
+                    log_history(name, "đoán chữ", guess, "ĐÚNG", scores[player_id])
                 else:
                     broadcast(f"Không có chữ '{guess}' nào.")
+                    log_history(name, "đoán chữ", guess, "SAI", scores[player_id])
             else:
                 if guess == answer:
                     scores[player_id] += 1000
                     broadcast(f"{name} đoán đúng từ và chiến thắng! +1000 điểm (Tổng: {scores[player_id]})")
                     broadcast("KẾT THÚC TRÒ CHƠI!")
+                    log_history(name, "đoán từ", guess, "ĐÚNG", scores[player_id])
                     return True
                 else:
                     broadcast(f"Đoán sai từ '{guess}'.")
+                    log_history(name, "đoán từ", guess, "SAI", scores[player_id])
 
-        # Gửi điểm cho tất cả người chơi
         for idx, nm in enumerate(names):
             broadcast(f"Điểm {nm}: {scores[idx]}")
+
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:
@@ -113,7 +130,6 @@ def handle_turn(player_id):
 
 
 def client_handler(client, player_id):
-    """Xử lý client mới"""
     try:
         client.sendall("Nhập tên người chơi: ".encode())
         name = client.recv(1024).decode().strip()
@@ -128,6 +144,13 @@ def client_handler(client, player_id):
             while True:
                 if handle_turn(turn):
                     break
+
+                # Lắng nghe yêu cầu reset từ client
+                client.sendall("Nhấn ENTER để reset câu hỏi.".encode())
+                reset_request = client.recv(1024).decode().strip()
+                if reset_request == "reset":
+                    reset_question()
+
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:
@@ -140,7 +163,6 @@ def client_handler(client, player_id):
 
 
 def start_server():
-    """Khởi động server"""
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((HOST, PORT))
     server.listen(2)
@@ -151,7 +173,7 @@ def start_server():
         print(f"Client {addr} đã kết nối!")
         with clients_lock:
             clients.append(client)
-        threading.Thread(target=client_handler, args=(client, len(clients)-1), daemon=True).start()
+        threading.Thread(target=client_handler, args=(client, len(clients) - 1), daemon=True).start()
 
 
 if __name__ == "__main__":
