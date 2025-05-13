@@ -6,7 +6,7 @@ import math
 from tkinter import ttk
 from tkinter import messagebox
 
-HOST = '192.168.56.1'
+HOST = '192.168.1.83'
 PORT = 12345
 
 SEGMENT_COLORS = [
@@ -32,12 +32,10 @@ class GameClientGUI:
     def _build_ui(self):
         self.notebook = ttk.Notebook(self.root)
         
-        # Tab chơi game
         self.play_tab = tk.Frame(self.notebook)
         self._build_game_tab(self.play_tab)
         self.notebook.add(self.play_tab, text="🎮 Trò chơi")
 
-        # Tab bảng xếp hạng
         self.rank_tab = tk.Frame(self.notebook)
         self._build_rank_tab(self.rank_tab)
         self.notebook.add(self.rank_tab, text="🏆 Bảng xếp hạng")
@@ -70,7 +68,7 @@ class GameClientGUI:
         self.turn_label.pack()
 
         self.question_label = tk.Label(self.game_frame, text="Câu hỏi: ---", font=("Arial",14))
-        self.word_label = tk.Label(self.game_frame, text="Từ khóa: ---", font=("Arial",14))
+        self.word_label = tk.Label(self.game_frame, text="Từ khóa: ---", font=("Arial",14), fg="#333")
         self.question_label.pack()
         self.word_label.pack()
 
@@ -110,7 +108,7 @@ class GameClientGUI:
         self.name_frame.pack_forget()
         self.game_frame.pack(padx=10, pady=10)
         self._log(f"Bạn đã tham gia với tên: {name}")
-        self.player_name = name  # Lưu tên người chơi
+        self.player_name = name
 
     def draw_wheel(self):
         self.canvas.delete("seg")
@@ -193,7 +191,7 @@ class GameClientGUI:
                     self._handle_score(line)
                 elif line.startswith("KẾT THÚC TRÒ CHƠI"):
                     self._show_victory_message(line)
-                elif "Đoán đúng" in line:  # Khi đoán đúng
+                elif "Đoán đúng" in line:
                     self._log(f"🎉 Bạn đã đoán đúng! {line}")
                     self._show_victory_message("🎉 Chúc mừng, bạn đã đoán đúng!")
                 else:
@@ -212,9 +210,7 @@ class GameClientGUI:
             pass
 
     def _update_rankings(self, line):
-        # Cập nhật bảng xếp hạng với dữ liệu mới (ví dụ, khi kết thúc game)
         self.rank_listbox.delete(0, tk.END)
-        # Giả sử bạn sẽ nhận dữ liệu từ server về bảng xếp hạng.
         rankings = ["Player 1: 1000 điểm", "Player 2: 900 điểm"]
         for rank in rankings:
             self.rank_listbox.insert(tk.END, rank)
