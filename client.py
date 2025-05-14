@@ -7,7 +7,7 @@ import datetime
 from tkinter import ttk
 from tkinter import messagebox
 
-HOST = '192.168.1.83'
+HOST = '192.168.56.1'
 PORT = 12345
 
 SEGMENT_COLORS = [
@@ -19,6 +19,7 @@ SEGMENT_TEXT = ["MISS", "BANKRUPT", "DOUBLE", "100", "200", "300", "400", "500"]
 class GameClientGUI:
     def __init__(self, root):
         self.root = root
+        self.my_turn = False
         root.title("🌡 Chiếc nón kỳ diệu 🌡")
         self.queue = queue.Queue()
         self.log_file = open("game_log.txt", "a", encoding="utf-8")  # Tạo hoặc mở file log
@@ -130,6 +131,8 @@ class GameClientGUI:
         self.spin_result.config(text="Quay...")
         self.guess_entry.config(state="normal")
         self.guess_btn.config(state="normal")
+        self.my_turn = False
+
 
     def animate_to(self, index):
         pointer_angle = 90
@@ -178,9 +181,12 @@ class GameClientGUI:
                 elif line.startswith("Từ khóa:") or line.startswith("Từ hiện tại:"):
                     self.word_label.config(text=line)
                 elif "Lượt của bạn" in line:
-                    self.turn_label.config(text=f"Đến lượt: {self.player_name}")
-                    self.spin_btn.config(state="normal")
-                    self._log(line)
+                    if hasattr(self, "player_name") and self.player_name in line:
+                        self.my_turn = True
+                        self.spin_btn.config(state="normal")
+                        self.turn_label.config(text=f"Đến lượt: {self.player_name}")
+                        self._log(line)
+
                 elif "quay nón và được:" in line:
                     self.spin_result.config(text=line)
                     self._log(line)
@@ -196,6 +202,12 @@ class GameClientGUI:
                 elif "Đoán đúng" in line:
                     self._log(f"🎉 Bạn đã đoán đúng! {line}")
                     self._show_victory_message("🎉 Chúc mừng, bạn đã đoán đúng!")
+                elif line.startswith("HIỂN_THỊ_BXH"):
+                    ranks = msg.split("\n")[1:]  # Lấy các dòng sau dòng tiêu đề
+                    self.rank_listbox.delete(0, tk.END)
+                    for r in ranks:
+                        self.rank_listbox.insert(tk.END, r.strip())
+
                 else:
                     self._log(line)
         self.root.after(100, self._process_queue)

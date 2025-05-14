@@ -1,3 +1,4 @@
+import os
 import socket
 import threading
 import random
@@ -56,6 +57,9 @@ def log_history(player_name, action, guess, result, score):
     with open("lichsu_game.txt", "a", encoding="utf-8") as f:
         f.write(f"[{now}] {player_name} {action}: '{guess}' - {result} (Điểm: {score})\n")
 
+def update_leaderboard(name, score):
+    with open("bangxephang.txt", "a", encoding="utf-8") as f:
+        f.write(f"{name}: {score}\n")
 
 def handle_turn(player_id):
     global turn, masked_answer, scores
@@ -101,8 +105,16 @@ def handle_turn(player_id):
                     scores[player_id] += 1000
                     broadcast(f"{name} đoán đúng từ và chiến thắng! +1000 điểm (Tổng: {scores[player_id]})")
                     broadcast("KẾT THÚC TRÒ CHƠI!")
+                    leaderboard_data = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
+                    rank_text = "HIỂN_THỊ_BXH\n" + "\n".join(f"{i+1}. {n}: {s} điểm" for i, (n, s) in enumerate(leaderboard_data))
+                    broadcast(rank_text)
+
+
                     log_history(name, "đoán từ", guess, "ĐÚNG", scores[player_id])
+                    update_leaderboard(name, scores[player_id])
+
                     return True
+
                 else:
                     broadcast(f"Đoán sai từ '{guess}'.")
                     log_history(name, "đoán từ", guess, "SAI", scores[player_id])
