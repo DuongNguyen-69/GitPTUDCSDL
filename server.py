@@ -2,7 +2,10 @@ import os
 import socket
 import threading
 import random
+import json
 from datetime import datetime
+
+SAVE_FILE = "savegame.json"
 
 questions = [
     {"question": "Thủ đô của Việt Nam là gì?", "answer": "hanoi"},
@@ -24,7 +27,6 @@ turn = 0
 wheel_options = ["MISS", "BANKRUPT", "DOUBLE", 100, 200, 300, 400, 500]
 clients_lock = threading.Lock()
 
-
 def broadcast(message):
     with clients_lock:
         for c in clients[:]:
@@ -33,10 +35,8 @@ def broadcast(message):
             except (ConnectionResetError, BrokenPipeError):
                 clients.remove(c)
 
-
 def mask_answer(answer):
     return ['_' if ch.isalpha() else ch for ch in answer]
-
 
 def send_question():
     global current_question, masked_answer
@@ -44,13 +44,13 @@ def send_question():
     masked_answer = mask_answer(current_question['answer'])
     broadcast(f"\nCâu hỏi: {current_question['question']}")
     broadcast(f"Từ khóa: {' '.join(masked_answer)}")
-
+    save_game_state()
 
 def update_turn():
     global turn
     current_player = names[turn]
     broadcast(f"\nĐến lượt {current_player}!")
-
+    save_game_state()
 
 def log_history(player_name, action, guess, result, score):
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -60,6 +60,46 @@ def log_history(player_name, action, guess, result, score):
 def update_leaderboard(name, score):
     with open("bangxephang.txt", "a", encoding="utf-8") as f:
         f.write(f"{name}: {score}\n")
+
+def save_game_state():
+    if len(names) < 2 or not current_question:
+        return
+    data = {
+        "names": names,
+        "scores": scores,
+        "turn": turn,
+        "current_question": current_question,
+        "masked_answer": masked_answer
+    }
+    with open(SAVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+def load_game_state():
+    global names, scores, turn, current_question, masked_answer
+    if not os.path.exists(SAVE_FILE):
+        return False
+    try:
+        with open(SAVE_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            names[:] = data["names"]
+            scores[:] = data["scores"]
+            turn = data["turn"]
+            current_question = data["current_question"]
+            masked_answer[:] = data["masked_answer"]
+        return True
+    except:
+        return False
+
+def clear_game_state():
+    if os.path.exists(SAVE_FILE):
+        os.remove(SAVE_FILE)
+
+def show_scores():
+    
+    score_text = "\n--- Điểm hiện tại ---\n"
+    for idx, nm in enumerate(names):
+        score_text += f"{nm}: {scores[idx]}\n"
+    broadcast(score_text.strip())
 
 def handle_turn(player_id):
     global turn, masked_answer, scores
@@ -104,23 +144,20 @@ def handle_turn(player_id):
                 if guess == answer:
                     scores[player_id] += 1000
                     broadcast(f"{name} đoán đúng từ và chiến thắng! +1000 điểm (Tổng: {scores[player_id]})")
-                    broadcast("KẾT THÚC TRÒ CHƠI!")
+                    broadcast("KẾT THÚc TRÒ CHƠI!")
                     leaderboard_data = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
                     rank_text = "HIỂN_THỊ_BXH\n" + "\n".join(f"{i+1}. {n}: {s} điểm" for i, (n, s) in enumerate(leaderboard_data))
                     broadcast(rank_text)
 
-
                     log_history(name, "đoán từ", guess, "ĐÚNG", scores[player_id])
                     update_leaderboard(name, scores[player_id])
-
+                    clear_game_state()
                     return True
-
                 else:
                     broadcast(f"Đoán sai từ '{guess}'.")
                     log_history(name, "đoán từ", guess, "SAI", scores[player_id])
 
-        for idx, nm in enumerate(names):
-            broadcast(f"Điểm {nm}: {scores[idx]}")
+        show_scores()
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:
@@ -130,22 +167,34 @@ def handle_turn(player_id):
         update_turn()
     return False
 
-
 def client_handler(client, player_id):
     try:
-        client.sendall("Nhập tên người chơi: ".encode())
+        mode = client.recv(1024).decode().strip()
         name = client.recv(1024).decode().strip()
         with clients_lock:
             names.append(name)
         broadcast(f"{name} đã tham gia trò chơi.")
 
         if len(clients) == 2:
-            broadcast("Cả 2 người chơi đã kết nối. Bắt đầu trò chơi!")
-            send_question()
-            update_turn()
+            broadcast("Cả 2 người chơi đã kết nối.")
+
+            if mode == "2" and load_game_state():
+                broadcast("\n👉 Khôi phục game từ lần chơi trước...")
+                broadcast(f"Câu hỏi: {current_question['question']}")
+                broadcast(f"Từ hiện tại: {' '.join(masked_answer)}")
+                show_scores()
+                broadcast("Bắt đầu trò chơi!")
+                update_turn()
+            else:
+                clear_game_state()
+                send_question()
+                broadcast("Bắt đầu trò chơi!")
+                update_turn()
+
             while True:
                 if handle_turn(turn):
                     break
+
     except (ConnectionResetError, BrokenPipeError):
         with clients_lock:
             if client in clients:
@@ -169,7 +218,6 @@ def start_server():
         with clients_lock:
             clients.append(client)
         threading.Thread(target=client_handler, args=(client, len(clients) - 1), daemon=True).start()
-
 
 if __name__ == "__main__":
     start_server()

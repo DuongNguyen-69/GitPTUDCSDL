@@ -20,6 +20,7 @@ class GameClientGUI:
     def __init__(self, root):
         self.root = root
         self.my_turn = False
+        self.selected_mode = None  # "1" hoặc "2"
         root.title("🌡 Chiếc nón kỳ diệu 🌡")
         self.queue = queue.Queue()
         self.log_file = open("game_log.txt", "a", encoding="utf-8")  # Tạo hoặc mở file log
@@ -32,6 +33,11 @@ class GameClientGUI:
         self._build_ui()
         root.after(100, self._process_queue)
 
+    def select_mode(self, mode):
+        self.selected_mode = mode
+        self.mode_frame.pack_forget()  # Ẩn khung chọn chế độ
+        self.name_frame.pack()         # Hiện khung nhập tên
+        
     def _build_ui(self):
         self.notebook = ttk.Notebook(self.root)
         
@@ -51,8 +57,14 @@ class GameClientGUI:
         self.name_entry = tk.Entry(self.name_frame)
         self.name_entry.pack(side="left", padx=5)
         tk.Button(self.name_frame, text="Tham gia", command=self.send_name).pack(side="left")
+        # chọn chế độ chơi chơi hay tiếp tục
+        self.mode_frame = tk.Frame(parent, pady=10)
+        tk.Label(self.mode_frame, text="Chọn chế độ chơi:").pack()
+        tk.Button(self.mode_frame, text="🔁 Tiếp tục game", command=lambda: self.select_mode("2")).pack(side="left", padx=5)
+        tk.Button(self.mode_frame, text="🆕 Game mới", command=lambda: self.select_mode("1")).pack(side="left", padx=5)
+        self.mode_frame.pack()
+        
         self.name_frame.pack()
-
         self.game_frame = tk.Frame(parent)
 
         self.info_frame = tk.Frame(self.game_frame)
@@ -67,7 +79,7 @@ class GameClientGUI:
             self.score_labels.append(score_lbl)
         self.info_frame.pack(pady=5)
 
-        self.turn_label = tk.Label(self.game_frame, text="Đến lượt: ---", font=("Arial",14))
+        self.turn_label = tk.Label(self.game_frame, text="Tên người chơi: ---", font=("Arial",14))
         self.turn_label.pack()
 
         self.question_label = tk.Label(self.game_frame, text="Câu hỏi: ---", font=("Arial",14))
@@ -98,6 +110,8 @@ class GameClientGUI:
         self.log.pack(pady=5)
 
         self.game_frame.pack(padx=10, pady=10)
+        
+
 
     def _build_rank_tab(self, parent):
         self.rank_listbox = tk.Listbox(parent, font=("Arial", 12), height=10, width=40)
@@ -107,7 +121,12 @@ class GameClientGUI:
         name = self.name_entry.get().strip()
         if not name:
             return
+        if not self.selected_mode:
+            messagebox.showwarning("Cảnh báo", "Vui lòng chọn chế độ chơi trước.")
+            return
+        self.sock.sendall(self.selected_mode.encode())  # Gửi chế độ trước
         self.sock.sendall(name.encode())
+        
         self.name_frame.pack_forget()
         self.game_frame.pack(padx=10, pady=10)
         self._log(f"Bạn đã tham gia với tên: {name}")
@@ -184,7 +203,7 @@ class GameClientGUI:
                     if hasattr(self, "player_name") and self.player_name in line:
                         self.my_turn = True
                         self.spin_btn.config(state="normal")
-                        self.turn_label.config(text=f"Đến lượt: {self.player_name}")
+                        self.turn_label.config(text=f"Tên người chơi: {self.player_name}")
                         self._log(line)
 
                 elif "quay nón và được:" in line:
@@ -212,16 +231,24 @@ class GameClientGUI:
                     self._log(line)
         self.root.after(100, self._process_queue)
 
-    def _handle_score(self, line):
-        try:
-            _, rest = line.split('Điểm ', 1)
-            name, sc = rest.split(':', 1)
-            for i, pl in enumerate(self.player_labels):
-                if pl.cget('text') == name.strip() or pl.cget('text') == f'Player {i+1}':
-                    pl.config(text=name.strip())
-                    self.score_labels[i].config(text=f'Score: {sc.strip()}')
-        except:
-            pass
+def _handle_score(self, line):
+    try:
+        parts = line.split("Điểm ", 1)[1].split(":", 1)
+        if len(parts) != 2:
+            return
+        name = parts[0].strip()
+        score = parts[1].strip()
+
+        for i, lbl in enumerate(self.player_labels):
+            lbl_name = lbl.cget("text")
+            if lbl_name.lower() == name.lower() or lbl_name.lower().startswith("player"):
+                self.player_labels[i].config(text=name)
+                self.score_labels[i].config(text=f"Score: {score}")
+                break
+    except Exception as e:
+        print("Lỗi xử lý điểm:", e)
+
+
 
     def _update_rankings(self, line):
         self.rank_listbox.delete(0, tk.END)
@@ -250,6 +277,11 @@ class GameClientGUI:
     # Ghi ra file log
         with open("game_log.txt", "a", encoding="utf-8") as f:
             f.write(full_msg + '\n')
+    # Hàm xử lí nút nhấn chế độ chơi        
+    def select_mode(self, mode):
+        self.selected_mode = mode
+        self.mode_frame.pack_forget()  # Ẩn nút sau khi chọn
+        self.name_frame.pack()         # Hiện khung nhập tên
 
 
 if __name__ == '__main__':
