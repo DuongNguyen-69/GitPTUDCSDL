@@ -95,7 +95,6 @@ def clear_game_state():
         os.remove(SAVE_FILE)
 
 def show_scores():
-    
     score_text = "\n--- Điểm hiện tại ---\n"
     for idx, nm in enumerate(names):
         score_text += f"{nm}: {scores[idx]}\n"
@@ -125,9 +124,10 @@ def handle_turn(player_id):
         else:
             client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())
             guess = client.recv(1024).decode().strip().lower()
+            guess = guess.strip()
             answer = current_question['answer']
 
-            if len(guess) == 1:
+            if len(guess) == 1 and guess.isalpha():
                 count = answer.count(guess)
                 if count > 0:
                     for i, ch in enumerate(answer):
@@ -144,7 +144,7 @@ def handle_turn(player_id):
                 if guess == answer:
                     scores[player_id] += 1000
                     broadcast(f"{name} đoán đúng từ và chiến thắng! +1000 điểm (Tổng: {scores[player_id]})")
-                    broadcast("KẾT THÚc TRÒ CHƠI!")
+                    broadcast("KẾT THÚC TRÒ CHƠI!")
                     leaderboard_data = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
                     rank_text = "HIỂN_THỊ_BXH\n" + "\n".join(f"{i+1}. {n}: {s} điểm" for i, (n, s) in enumerate(leaderboard_data))
                     broadcast(rank_text)
@@ -192,7 +192,9 @@ def client_handler(client, player_id):
                 update_turn()
 
             while True:
-                if handle_turn(turn):
+                if player_id == turn:
+                    if handle_turn(player_id):
+                        break
                     break
 
     except (ConnectionResetError, BrokenPipeError):
@@ -204,7 +206,6 @@ def client_handler(client, player_id):
             client.close()
         except:
             pass
-
 
 def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
