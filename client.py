@@ -7,7 +7,7 @@ import datetime
 from tkinter import ttk
 from tkinter import messagebox
 
-HOST = '192.168.1.10'
+HOST = '192.168.88.169'
 PORT = 12345
 
 SEGMENT_COLORS = [

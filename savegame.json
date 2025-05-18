@@ -1,23 +1,19 @@
 {
   "names": [
-    "1",
-    "2"
+    "qiqiqiqi",
+    "ppppp"
   ],
   "scores": [
-    0,
+    200,
     0
   ],
   "turn": 0,
   "current_question": {
-    "question": "Trái cây màu đỏ, nhỏ, có vị chua ngọt là?",
-    "answer": "strawberry"
+    "question": "Ngôn ngữ lập trình phổ biến cho AI?",
+    "answer": "python"
   },
   "masked_answer": [
-    "_",
-    "_",
-    "_",
-    "_",
-    "_",
+    "p",
     "_",
     "_",
     "_",

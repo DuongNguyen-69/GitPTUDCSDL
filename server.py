@@ -4,9 +4,7 @@ import threading
 import random
 import json
 from datetime import datetime
-
 SAVE_FILE = "savegame.json"
-
 questions = [
     {"question": "Thủ đô của Việt Nam là gì?", "answer": "hanoi"},
     {"question": "Trái cây màu đỏ, nhỏ, có vị chua ngọt là?", "answer": "strawberry"},
@@ -14,10 +12,8 @@ questions = [
     {"question": "Hệ điều hành mã nguồn mở nổi tiếng?", "answer": "linux"},
     {"question": "Ngôn ngữ lập trình phổ biến cho AI?", "answer": "python"},
 ]
-
 HOST = ''
 PORT = 12345
-
 clients = []
 names = []
 scores = [0, 0]
@@ -28,6 +24,7 @@ wheel_options = ["MISS", "BANKRUPT", "DOUBLE", 100, 200, 300, 400, 500]
 clients_lock = threading.Lock()
 game_ended = False
 
+#gửi message tới toàn bộ client đang kết nối. Nếu bị mất kết nối -> xóa khỏi client
 def broadcast(message):
     with clients_lock:
         for c in clients[:]:
@@ -48,6 +45,7 @@ def mask_answer(answer):
     return ['_' if ch.isalpha() else ch for ch in answer]
 
 def send_question():
+    # chọn ngẫu nhiên câu hỏi, che đáp án _____
     global current_question, masked_answer
     current_question = random.choice(questions)
     masked_answer = mask_answer(current_question['answer'])
@@ -57,21 +55,20 @@ def send_question():
 
 def update_turn():
     global turn
-
-    # Validate turn before accessing names list
     if turn >= len(names):
         print(f"Invalid turn: {turn}, names length: {len(names)}")
         return
-
     current_player = names[turn]
     broadcast(f"\nĐến lượt {current_player}!")
     save_game_state()
 
 def log_history(player_name, action, guess, result, score):
+    # lưu vào file txt
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open("lichsu_game.txt", "a", encoding="utf-8") as f:
         f.write(f"[{now}] {player_name} {action}: '{guess}' - {result} (Điểm: {score})\n")
 
+# BẢNG XẾP HẠNG
 def load_leaderboard():
     leaderboard = []
     try:
@@ -118,6 +115,7 @@ def send_leaderboard_to_all():
     rank_text = "HIỂN_THỊ_BXH\n" + "\n".join(f"{i+1}. {n}: {s} điểm" for i, (n, s) in enumerate(leaderboard))
     broadcast(rank_text)
 
+# LƯU VÀ KHÔI PHỤC TRẠNG THÁI TRÒ CHƠI
 def save_game_state():
     if len(names) < 2 or not current_question:
         return
@@ -151,6 +149,7 @@ def clear_game_state():
     if os.path.exists(SAVE_FILE):
         os.remove(SAVE_FILE)
 
+# KHỞI ĐỘNG LẠI TRÒ CHƠI
 def reset_game():
     global scores, turn, game_ended
     # Reset scores to 0
@@ -173,6 +172,7 @@ def reset_game():
     # Update turn
     update_turn()
 
+# HIỂN THỊ ĐIỂM
 def show_scores():
     score_text = "\n--- Điểm hiện tại ---\n"
     for idx, nm in enumerate(names):
@@ -182,31 +182,32 @@ def show_scores():
         score_text += f"{current_marker}SCORE_UPDATE:{nm}:{scores[idx]}\n"
     broadcast(score_text.strip())
 
+# LƯỢT CHƠI
 def handle_turn(player_id):
     global turn, masked_answer, scores, game_ended
     landed_on_double = False
 
-    # Check if player_id is valid before accessing clients list
+    # KTRA ID NGƯỜI CHƠI CÓ HỢP LỆ KO
     with clients_lock:
         if player_id >= len(clients):
             print(f"Invalid player_id: {player_id}, clients length: {len(clients)}")
             return False
         client = clients[player_id]
 
-    # Check if player_id is valid for names list
+    # KTRA ID NGƯỜI CHƠI CÓ HỢP LỆ CHO DS TÊN
     if player_id >= len(names):
         print(f"Invalid player_id for names: {player_id}, names length: {len(names)}")
         return False
     name = names[player_id]
 
-    # Check if player_id is valid for scores list
+    # KTRA ID NGƯỜI CHƠI CÓ HỢP LỆ CHO DS ĐIỂM K
     if player_id >= len(scores):
         print(f"Invalid player_id for scores: {player_id}, scores length: {len(scores)}")
         return False
 
-    # Check if the game has already ended
+    # KTRA GAME KẾT THÚC HAY CHƯA
     if game_ended:
-        # If game has ended, check if this player wants to start a new game
+        # game kthuc thì check xem có ng chơi nào muốn start
         try:
             client.sendall("\nTR CHƠI Đ KẾT THÚC.......".encode())
             response = client.recv(1024)
@@ -222,7 +223,7 @@ def handle_turn(player_id):
             print(f"Error waiting for new game request: {e}")
             return False
 
-    # Track the initial score to calculate points earned in this turn
+    ######
     initial_score = scores[player_id]
     try:
         client.sendall(f"\nLượt của bạn ({name}). Nhấn ENTER để quay nón...".encode())
@@ -245,26 +246,25 @@ def handle_turn(player_id):
             # Log the DOUBLE result first
             log_history(name, "nhân đôi", "-", "DOUBLE", scores[player_id])
 
-            # Allow player to guess a character when they land on DOUBLE
+            # cho phép ng chơi đoán ký tự double
             client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())
             guess = client.recv(1024).decode().strip().lower()
             guess = guess.strip()
             answer = current_question['answer']
 
             if len(guess) == 1 and guess.isalpha():
-                count = answer.count(guess)
+                count = answer.count(guess) #đếm số lần xuất hiện chữ cái đã đoán
                 if count > 0:
-                    # Check if the letter is already revealed
+                    # kiểm tra tin đã gửi đi chưa
                     already_revealed = guess in masked_answer
 
-                    # Update masked_answer regardless
+                    # cập nhật ký tự đáp án
                     for i, ch in enumerate(answer):
                         if ch == guess:
                             masked_answer[i] = guess
 
-                    # Only award points if the letter wasn't already revealed
+                    # kiểm tra chữ cái đã xuất hiện trong đáp án chưa
                     if not already_revealed:
-                        # No points for guessing after DOUBLE, just the guess opportunity
                         broadcast(f"Có {count} chữ '{guess}' trong từ.")
                     else:
                         broadcast(f"Chữ '{guess}' đã được hiện trước đó. Không được tính điểm!")
@@ -272,7 +272,7 @@ def handle_turn(player_id):
                     broadcast(f"Từ hiện tại: {' '.join(masked_answer)}")
                     log_history(name, "đoán chữ sau DOUBLE", guess, "ĐÚNG" if not already_revealed else "ĐÃ HIỆN", scores[player_id])
 
-                    # Check if all letters have been revealed
+                    # kiểm tra tất cả các đáp án
                     if '_' not in masked_answer:
                         scores[player_id] += 500  # Bonus for completing the word
                         broadcast(f"{name} đã hoàn thành từ và chiến thắng! +500 điểm (Tổng: {scores[player_id]})")
@@ -285,7 +285,7 @@ def handle_turn(player_id):
                         update_leaderboard(name, scores[player_id])
                         clear_game_state()
 
-                        # Set the game_ended flag to true
+                        # chỉnh game_end về true
                         game_ended = True
 
                         # Broadcast a message to all clients that they can start a new game
@@ -308,18 +308,14 @@ def handle_turn(player_id):
                     update_leaderboard(name, scores[player_id])
                     clear_game_state()
 
-                    # Set the game_ended flag to true
                     game_ended = True
 
-                    # Broadcast a message to all clients that they can start a new game
                     broadcast("\nTrò chơi đã kết thúc. Nhấn ENTER để bắt đầu trò chơi mới...")
 
                     return True
                 else:
                     broadcast(f"Đoán sai từ '{guess}'.")
                     log_history(name, "đoán từ sau DOUBLE", guess, "SAI", scores[player_id])
-
-            # Player gets an extra turn after DOUBLE
             return False
         else:
             client.sendall("Nhập chữ cái hoặc đoán từ: ".encode())
@@ -330,15 +326,12 @@ def handle_turn(player_id):
             if len(guess) == 1 and guess.isalpha():
                 count = answer.count(guess)
                 if count > 0:
-                    # Check if the letter is already revealed
                     already_revealed = guess in masked_answer
 
-                    # Update masked_answer regardless
                     for i, ch in enumerate(answer):
                         if ch == guess:
                             masked_answer[i] = guess
 
-                    # Only award points if the letter wasn't already revealed
                     if not already_revealed:
                         scores[player_id] += result * count
                         broadcast(f"Có {count} chữ '{guess}' trong từ.")
@@ -348,9 +341,9 @@ def handle_turn(player_id):
                     broadcast(f"Từ hiện tại: {' '.join(masked_answer)}")
                     log_history(name, "đoán chữ", guess, "ĐÚNG" if not already_revealed else "ĐÃ HIỆN", scores[player_id])
 
-                    # Check if all letters have been revealed
+                    # kiểm tra nếu các ký tự đã hiện hết
                     if '_' not in masked_answer:
-                        scores[player_id] += 500  # Bonus for completing the word
+                        scores[player_id] += 500  # tặng điểm
                         broadcast(f"{name} đã hoàn thành từ và chiến thắng! +500 điểm (Tổng: {scores[player_id]})")
                         broadcast("KẾT THÚC TRÒ CHƠI!")
                         leaderboard_data = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
@@ -361,10 +354,8 @@ def handle_turn(player_id):
                         update_leaderboard(name, scores[player_id])
                         clear_game_state()
 
-                        # Set the game_ended flag to true
                         game_ended = True
 
-                        # Broadcast a message to all clients that they can start a new game
                         broadcast("\nTrò chơi đã kết thúc. Nhấn ENTER để bắt đầu trò chơi mới...")
 
                         return True
@@ -384,10 +375,8 @@ def handle_turn(player_id):
                     update_leaderboard(name, scores[player_id])
                     clear_game_state()
 
-                    # Set the game_ended flag to true
                     game_ended = True
 
-                    # Broadcast a message to all clients that they can start a new game
                     broadcast("\nTrò chơi đã kết thúc. Nhấn ENTER để bắt đầu trò chơi mới...")
 
                     return True
@@ -395,13 +384,12 @@ def handle_turn(player_id):
                     broadcast(f"Đoán sai từ '{guess}'.")
                     log_history(name, "đoán từ", guess, "SAI", scores[player_id])
 
-        # Calculate points earned in this turn
+        # tính điểm trong 1 lượt
         points_earned = scores[player_id] - initial_score
         if points_earned > 0:
             broadcast(f"{name} đã kiếm được {points_earned} điểm trong lượt này!")
         elif points_earned < 0:
             broadcast(f"{name} đã mất {abs(points_earned)} điểm trong lượt này!")
-
         show_scores()
     except (ConnectionResetError, BrokenPipeError, OSError) as e:
         with clients_lock:
@@ -412,24 +400,18 @@ def handle_turn(player_id):
         except:
             pass
     finally:
-        # Only update turn if the player didn't land on DOUBLE
+        # chuyển lượt khi ko phải DOUBLE
         if not landed_on_double:
             with clients_lock:
-                # If there are no clients left, reset turn to 0
                 if not clients:
                     turn = 0
-                # If there's only one client left, set turn to its index
                 elif len(clients) == 1:
                     turn = 0
-                # Otherwise, toggle between 0 and 1
                 else:
                     turn = 1 - turn
-
-            # Only update turn if there are clients connected
             if clients:
                 update_turn()
         else:
-            # If player landed on DOUBLE, broadcast that they get an extra turn
             broadcast(f"{name} quay được DOUBLE nên được chơi thêm lượt nữa!")
     return False
 
@@ -438,27 +420,24 @@ def client_handler(client, player_id):
         mode = client.recv(1024).decode().strip()
         name = client.recv(1024).decode().strip()
 
-        # Ensure player_id is still valid
+        # đảm bảo id của player vẫn hoạt động
         with clients_lock:
             if player_id >= len(clients) or clients[player_id] != client:
                 print(f"Client mismatch or invalid player_id: {player_id}")
                 return
 
-            # Add name to the names list, ensuring it has enough elements
+            # thêm tên vào danh sách
             while len(names) <= player_id:
                 names.append("")
             names[player_id] = name
 
-            # Ensure scores list has enough elements
             while len(scores) <= player_id:
                 scores.append(0)
 
         broadcast(f"{name} đã tham gia trò chơi.")
 
-        # Send leaderboard to the new client
         send_leaderboard_to_all()
 
-        # Main client handling loop - runs for all clients regardless of game state
         while True:
             # Check if player_id is still valid
             with clients_lock:
@@ -498,10 +477,7 @@ def client_handler(client, player_id):
                         broadcast("Bắt đầu trò chơi!")
                         update_turn()
 
-                # If it's this player's turn, handle it
                 if player_id == turn:
-                    # Handle the turn, which returns True if game ended
-                    # The handle_turn function now handles new game requests internally
                     handle_turn(player_id)
 
     except (ConnectionResetError, BrokenPipeError, OSError) as e:
@@ -525,11 +501,11 @@ def start_server():
         print(f"Client {addr} đã kết nối!")
 
         with clients_lock:
-            # Add the client to the list and get its index
+            # thêm client
             clients.append(client)
             player_id = len(clients) - 1
 
-            # Limit to 2 players maximum
+            # giới hạn 2 client
             if len(clients) > 2:
                 print(f"Too many clients, rejecting client {addr}")
                 try:
@@ -537,10 +513,10 @@ def start_server():
                     client.close()
                 except:
                     pass
-                clients.pop()  # Remove the client we just added
+                clients.pop()  # xóa client vừa thêm
                 continue
 
-        # Start a new thread to handle this client
+        # bắt đầu thread để xử lý
         threading.Thread(target=client_handler, args=(client, player_id), daemon=True).start()
 
 if __name__ == "__main__":

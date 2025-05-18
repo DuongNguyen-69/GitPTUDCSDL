@@ -3848,3 +3848,167 @@
 [2025-05-17 22:46:11] 2 đã đặt lại bảng xếp hạng.
 [2025-05-17 22:46:11] 2 đã đặt lại bảng xếp hạng.
 [2025-05-17 22:46:17] Đến lượt 1!
+[2025-05-18 19:42:18] Bạn đã tham gia với tên: dududu
+[2025-05-18 19:42:18] dududu đã tham gia trò chơi.
+[2025-05-18 19:42:24] Bắt đầu trò chơi!
+[2025-05-18 19:42:24] Đến lượt dududu!
+[2025-05-18 19:42:24] Lượt của bạn (dududu). Nhấn ENTER để quay nón...
+[2025-05-18 19:42:24] Đến lượt dududu!
+[2025-05-18 19:42:29] Bạn đã tham gia với tên: hahaa
+[2025-05-18 19:42:29] hahaa đã tham gia trò chơi.
+[2025-05-18 19:42:29] hahaa đã tham gia trò chơi.
+[2025-05-18 19:42:47] dududu quay nón và được: BANKRUPT
+[2025-05-18 19:42:47] dududu bị phá sản! Điểm về 0.
+[2025-05-18 19:42:47] --- Điểm hiện tại ---
+[2025-05-18 19:42:47] Đến lượt hahaa!
+[2025-05-18 19:42:47] dududu quay nón và được: BANKRUPT
+[2025-05-18 19:42:47] dududu bị phá sản! Điểm về 0.
+[2025-05-18 19:42:47] --- Điểm hiện tại ---
+[2025-05-18 19:42:47] Đến lượt hahaa!
+[2025-05-18 19:42:47] Lượt của bạn (hahaa). Nhấn ENTER để quay nón...
+[2025-05-18 19:42:50] hahaa quay nón và được: BANKRUPT
+[2025-05-18 19:42:50] hahaa bị phá sản! Điểm về 0.
+[2025-05-18 19:42:50] --- Điểm hiện tại ---
+[2025-05-18 19:42:50] Đến lượt dududu!
+[2025-05-18 19:42:50] hahaa quay nón và được: BANKRUPT
+[2025-05-18 19:42:50] hahaa bị phá sản! Điểm về 0.
+[2025-05-18 19:42:50] --- Điểm hiện tại ---
+[2025-05-18 19:42:50] Đến lượt dududu!
+[2025-05-18 19:42:50] Lượt của bạn (dududu). Nhấn ENTER để quay nón...
+[2025-05-18 19:42:52] dududu quay nón và được: 300
+[2025-05-18 19:42:52] dududu quay nón và được: 300
+[2025-05-18 19:42:52] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:04] Có 1 chữ 'p' trong từ.
+[2025-05-18 19:43:04] dududu đã kiếm được 300 điểm trong lượt này!
+[2025-05-18 19:43:04] --- Điểm hiện tại ---
+[2025-05-18 19:43:04] Đến lượt hahaa!
+[2025-05-18 19:43:04] Có 1 chữ 'p' trong từ.
+[2025-05-18 19:43:04] dududu đã kiếm được 300 điểm trong lượt này!
+[2025-05-18 19:43:04] --- Điểm hiện tại ---
+[2025-05-18 19:43:04] Đến lượt hahaa!
+[2025-05-18 19:43:04] Lượt của bạn (hahaa). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:08] hahaa quay nón và được: 300
+[2025-05-18 19:43:08] hahaa quay nón và được: 300
+[2025-05-18 19:43:08] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:14] Có 1 chữ 'y' trong từ.
+[2025-05-18 19:43:14] hahaa đã kiếm được 300 điểm trong lượt này!
+[2025-05-18 19:43:14] --- Điểm hiện tại ---
+[2025-05-18 19:43:14] Đến lượt dududu!
+[2025-05-18 19:43:14] Có 1 chữ 'y' trong từ.
+[2025-05-18 19:43:14] hahaa đã kiếm được 300 điểm trong lượt này!
+[2025-05-18 19:43:14] --- Điểm hiện tại ---
+[2025-05-18 19:43:14] Đến lượt dududu!
+[2025-05-18 19:43:14] Lượt của bạn (dududu). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:17] dududu quay nón và được: MISS
+[2025-05-18 19:43:17] dududu bị mất lượt!
+[2025-05-18 19:43:17] --- Điểm hiện tại ---
+[2025-05-18 19:43:17] Đến lượt hahaa!
+[2025-05-18 19:43:17] dududu quay nón và được: MISS
+[2025-05-18 19:43:17] dududu bị mất lượt!
+[2025-05-18 19:43:17] --- Điểm hiện tại ---
+[2025-05-18 19:43:17] Đến lượt hahaa!
+[2025-05-18 19:43:17] Lượt của bạn (hahaa). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:20] hahaa quay nón và được: DOUBLE
+[2025-05-18 19:43:20] hahaa nhân đôi điểm! Tổng điểm: 600
+[2025-05-18 19:43:20] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:25] Có 1 chữ 't' trong từ.
+[2025-05-18 19:43:25] Có 1 chữ 't' trong từ.
+[2025-05-18 19:43:25] hahaa quay được DOUBLE nên được chơi thêm lượt nữa!
+[2025-05-18 19:43:25] hahaa quay được DOUBLE nên được chơi thêm lượt nữa!
+[2025-05-18 19:43:25] Lượt của bạn (hahaa). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:28] hahaa quay nón và được: 500
+[2025-05-18 19:43:28] hahaa quay nón và được: 500
+[2025-05-18 19:43:28] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:33] Có 1 chữ 'n' trong từ.
+[2025-05-18 19:43:33] hahaa đã kiếm được 500 điểm trong lượt này!
+[2025-05-18 19:43:33] --- Điểm hiện tại ---
+[2025-05-18 19:43:33] Có 1 chữ 'n' trong từ.
+[2025-05-18 19:43:33] Đến lượt dududu!
+[2025-05-18 19:43:33] hahaa đã kiếm được 500 điểm trong lượt này!
+[2025-05-18 19:43:33] Lượt của bạn (dududu). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:33] --- Điểm hiện tại ---
+[2025-05-18 19:43:33] Đến lượt dududu!
+[2025-05-18 19:43:36] dududu quay nón và được: 500
+[2025-05-18 19:43:36] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:36] dududu quay nón và được: 500
+[2025-05-18 19:43:41] Có 1 chữ 'h' trong từ.
+[2025-05-18 19:43:41] dududu đã kiếm được 500 điểm trong lượt này!
+[2025-05-18 19:43:41] --- Điểm hiện tại ---
+[2025-05-18 19:43:41] Đến lượt hahaa!
+[2025-05-18 19:43:41] Có 1 chữ 'h' trong từ.
+[2025-05-18 19:43:41] dududu đã kiếm được 500 điểm trong lượt này!
+[2025-05-18 19:43:41] --- Điểm hiện tại ---
+[2025-05-18 19:43:41] Đến lượt hahaa!
+[2025-05-18 19:43:41] Lượt của bạn (hahaa). Nhấn ENTER để quay nón...
+[2025-05-18 19:43:43] hahaa quay nón và được: 500
+[2025-05-18 19:43:43] hahaa quay nón và được: 500
+[2025-05-18 19:43:43] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:43:47] Có 1 chữ 'o' trong từ.
+[2025-05-18 19:43:47] hahaa đã hoàn thành từ và chiến thắng! +500 điểm (Tổng: 2100)
+[2025-05-18 19:43:47] Có 1 chữ 'o' trong từ.
+[2025-05-18 19:43:47] hahaa đã hoàn thành từ và chiến thắng! +500 điểm (Tổng: 2100)
+[2025-05-18 19:43:47] 1. hahaa: 2100 điểm
+[2025-05-18 19:43:47] 1. hahaa: 2100 điểm
+[2025-05-18 19:43:47] 2. dududu: 800 điểm
+[2025-05-18 19:43:47] 2. dududu: 800 điểm
+[2025-05-18 19:43:47] 1. hahaa: 2100 điểm
+[2025-05-18 19:43:47] 1. hahaa: 2100 điểm
+[2025-05-18 19:43:47] Nhận thông báo kết thúc trò chơi. Tự động bắt đầu trò chơi mới...
+[2025-05-18 19:43:47] Nhận thông báo kết thúc trò chơi. Tự động bắt đầu trò chơi mới...
+[2025-05-18 19:43:47] Đến lượt dududu!
+[2025-05-18 19:43:47] Đến lượt dududu!
+[2025-05-18 19:43:47] Nhận thông báo kết thúc trò chơi. Tự động bắt đầu trò chơi mới...
+[2025-05-18 19:53:17] Bạn đã tham gia với tên: as
+[2025-05-18 19:53:17] as đã tham gia trò chơi.
+[2025-05-18 19:53:17] 1. hahaa: 2100 điểm
+[2025-05-18 19:53:22] Bắt đầu trò chơi!
+[2025-05-18 19:53:22] Đến lượt as!
+[2025-05-18 19:53:22] Lượt của bạn (as). Nhấn ENTER để quay nón...
+[2025-05-18 19:53:22] Đến lượt as!
+[2025-05-18 19:53:29] Bạn đã tham gia với tên: sa
+[2025-05-18 19:53:29] sa đã tham gia trò chơi.
+[2025-05-18 19:53:29] 1. hahaa: 2100 điểm
+[2025-05-18 19:53:29] sa đã tham gia trò chơi.
+[2025-05-18 19:53:29] 1. hahaa: 2100 điểm
+[2025-05-18 19:53:43] as quay nón và được: 200
+[2025-05-18 19:53:43] as quay nón và được: 200
+[2025-05-18 19:53:43] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:53:48] Có 1 chữ 'p' trong từ.
+[2025-05-18 19:53:48] as đã kiếm được 200 điểm trong lượt này!
+[2025-05-18 19:53:48] --- Điểm hiện tại ---
+[2025-05-18 19:53:48] Có 1 chữ 'p' trong từ.
+[2025-05-18 19:53:48] as đã kiếm được 200 điểm trong lượt này!
+[2025-05-18 19:53:48] --- Điểm hiện tại ---
+[2025-05-18 19:53:48] Đến lượt sa!
+[2025-05-18 19:53:48] Đến lượt sa!
+[2025-05-18 19:53:48] Lượt của bạn (sa). Nhấn ENTER để quay nón...
+[2025-05-18 19:53:51] sa quay nón và được: 200
+[2025-05-18 19:53:51] sa quay nón và được: 200
+[2025-05-18 19:53:51] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:54:01] Server is full. Please try again later.
+[2025-05-18 19:56:01] Bạn đã tham gia với tên: uuuu
+[2025-05-18 19:56:01] uuuu đã tham gia trò chơi.
+[2025-05-18 19:56:01] 1. hahaa: 2100 điểm
+[2025-05-18 19:56:07] Lượt của bạn (uuuu). Nhấn ENTER để quay nón...
+[2025-05-18 19:56:12] Bạn đã tham gia với tên: ooo
+[2025-05-18 19:56:12] ooo đã tham gia trò chơi.
+[2025-05-18 19:56:12] 1. hahaa: 2100 điểm
+[2025-05-18 19:56:12] ooo đã tham gia trò chơi.
+[2025-05-18 19:56:12] 1. hahaa: 2100 điểm
+[2025-05-18 19:56:22] uuuu quay nón và được: 200
+[2025-05-18 19:56:22] uuuu quay nón và được: 200
+[2025-05-18 19:56:22] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:56:26] Đến lượt uuuu!
+[2025-05-18 19:56:37] Đến lượt uuuu!
+[2025-05-18 19:57:17] Bạn đã tham gia với tên: qiqiqiqi
+[2025-05-18 19:57:17] qiqiqiqi đã tham gia trò chơi.
+[2025-05-18 19:57:17] 1. hahaa: 2100 điểm
+[2025-05-18 19:57:21] Lượt của bạn (qiqiqiqi). Nhấn ENTER để quay nón...
+[2025-05-18 19:57:28] Bạn đã tham gia với tên: ppppp
+[2025-05-18 19:57:28] ppppp đã tham gia trò chơi.
+[2025-05-18 19:57:28] 1. hahaa: 2100 điểm
+[2025-05-18 19:57:28] ppppp đã tham gia trò chơi.
+[2025-05-18 19:57:28] 1. hahaa: 2100 điểm
+[2025-05-18 19:57:38] qiqiqiqi quay nón và được: 300
+[2025-05-18 19:57:38] Nhập chữ cái hoặc đoán từ:
+[2025-05-18 19:57:38] qiqiqiqi quay nón và được: 300
